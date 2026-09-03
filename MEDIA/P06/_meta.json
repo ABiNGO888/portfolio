@@ -1,0 +1,34 @@
+{
+  "dragon_publishing_qr.jpg": {
+    "order": 4,
+    "title": "Illustration / Publishing",
+    "subtitle": "COMICS / AUDIOBOOK"
+  },
+  "dragon_motion_space.mp4": {
+    "order": 5,
+    "title": "Motion 01",
+    "subtitle": "SPACE JOURNEY",
+    "className": "video-card"
+  },
+  "dragon_motion_nightmare.mp4": {
+    "order": 6,
+    "title": "Motion 02",
+    "subtitle": "LOONBAO / NIGHTMARE",
+    "className": "video-card"
+  },
+  "dragon_cover_party.jpg": {
+    "order": 1,
+    "title": "Cover",
+    "subtitle": "MAIN VISUAL"
+  },
+  "dragon_kindergarten.jpg": {
+    "order": 3,
+    "title": "Campus",
+    "subtitle": "CHARACTER SCENE"
+  },
+  "dragon_world_city.jpg": {
+    "order": 2,
+    "title": "World",
+    "subtitle": "CITY / SETTING"
+  }
+}

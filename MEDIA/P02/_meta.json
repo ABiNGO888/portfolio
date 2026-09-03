@@ -1,0 +1,38 @@
+{
+  "naruto_device.jpg": {
+    "order": 1,
+    "title": "NARUTO × XOLOme",
+    "subtitle": "HERO DEVICE",
+    "className": "card device"
+  },
+  "naruto_lifestyle.jpg": {
+    "order": 2,
+    "title": "Bring the collections to life",
+    "subtitle": "LIFESTYLE",
+    "className": "card"
+  },
+  "naruto_desk.jpg": {
+    "order": 3,
+    "title": "Desktop Collection",
+    "subtitle": "IP DISPLAY",
+    "className": "card"
+  },
+  "naruto_card_01.jpg": {
+    "order": 4,
+    "title": "Card Trigger",
+    "subtitle": "INTERACTIVE / 01",
+    "className": "card"
+  },
+  "naruto_card_02.jpg": {
+    "order": 5,
+    "title": "Character Card",
+    "subtitle": "INTERACTIVE / 02",
+    "className": "card"
+  },
+  "naruto_setup.jpg": {
+    "order": 6,
+    "title": "Desk Setup",
+    "subtitle": "SCENE / PROCESS",
+    "className": "card"
+  }
+}

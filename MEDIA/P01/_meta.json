@@ -1,0 +1,44 @@
+{
+  "archive_olympics.jpg": {
+    "order": 1,
+    "title": "2022 Winter Olympics",
+    "subtitle": "6-PANEL HOLOGRAPHIC CHAMBER",
+    "className": "card"
+  },
+  "archive_metro.jpg": {
+    "order": 2,
+    "title": "Metro Advertisement",
+    "subtitle": "4-PANEL HOLOGRAPHIC CHAMBER",
+    "className": "card"
+  },
+  "archive_audi.jpg": {
+    "order": 3,
+    "title": "AUDI",
+    "subtitle": "BRAND LAUNCH EVENT",
+    "className": "card portrait-card"
+  },
+  "archive_mcdonalds.jpg": {
+    "order": 4,
+    "title": "McDonald's",
+    "subtitle": "HOLOGRAPHIC GAME ZONE",
+    "className": "card portrait-card"
+  },
+  "archive_dyson_ayayi.jpg": {
+    "order": 5,
+    "title": "Dyson × AYAYI",
+    "subtitle": "NEW PRODUCT LAUNCH",
+    "className": "card portrait-card"
+  },
+  "archive_mj.jpg": {
+    "order": 6,
+    "title": "Michael Jackson",
+    "subtitle": "HOLOGRAPHIC “RESURRECTION” CONCERT",
+    "className": "card"
+  },
+  "archive_asian_superstars.jpg": {
+    "order": 7,
+    "title": "Asian Superstars",
+    "subtitle": "HOLOGRAPHIC CONCERT",
+    "className": "card portrait-card"
+  }
+}

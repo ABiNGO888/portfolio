@@ -1,0 +1,26 @@
+{
+  "gm_gameplay_demo.mp4": {
+    "order": 1,
+    "title": "演示 Demo",
+    "subtitle": "GAMEPLAY",
+    "className": "gm-card video-card"
+  },
+  "gm_ultimate_alice_burnslash.mp4": {
+    "order": 2,
+    "title": "Alice · Burn Slash",
+    "subtitle": "ULTIMATE 01",
+    "className": "gm-skill-card video-card"
+  },
+  "gm_ultimate_atom_tsunami.mp4": {
+    "order": 3,
+    "title": "A-TOM · Tsunami Impact",
+    "subtitle": "ULTIMATE 02",
+    "className": "gm-skill-card video-card"
+  },
+  "gm_ultimate_steelwave.mp4": {
+    "order": 4,
+    "title": "钢派波",
+    "subtitle": "ULTIMATE 03",
+    "className": "gm-skill-card video-card"
+  }
+}

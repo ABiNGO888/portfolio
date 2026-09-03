@@ -1,0 +1,38 @@
+{
+  "sandbox_device.jpg": {
+    "order": 1,
+    "title": "The Sandbox × XOLOme",
+    "subtitle": "CUSTOM HOLOGRAM DEVICE",
+    "className": "card device portrait-card"
+  },
+  "sandbox_booth.jpg": {
+    "order": 2,
+    "title": "Hologram Booth Photo",
+    "subtitle": "VIRTUAL CHARACTER",
+    "className": "card"
+  },
+  "sandbox_opening.jpg": {
+    "order": 3,
+    "title": "Opening Ceremony",
+    "subtitle": "ON-SITE",
+    "className": "card"
+  },
+  "sandbox_venue.jpg": {
+    "order": 4,
+    "title": "Shanghai Pudong",
+    "subtitle": "EXHIBITION SPACE",
+    "className": "card"
+  },
+  "sandbox_device_close.jpg": {
+    "order": 5,
+    "title": "Portal Device",
+    "subtitle": "DETAIL",
+    "className": "card portrait-card"
+  },
+  "sandbox_media.jpg": {
+    "order": 6,
+    "title": "Official Media Coverage",
+    "subtitle": "PUDONG / SHANGHAI",
+    "className": "card"
+  }
+}

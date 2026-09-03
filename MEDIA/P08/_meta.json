@@ -1,0 +1,44 @@
+{
+  "garage_op.mp4": {
+    "order": 1,
+    "title": "OP / 动画片段",
+    "subtitle": "01 · VIDEO",
+    "className": "gm-card op-card video-card"
+  },
+  "garage_jj.jpeg": {
+    "order": 3,
+    "title": "JJ",
+    "subtitle": "03 · POSTER",
+    "className": "gm-card poster-card"
+  },
+  "garage_dajin.jpeg": {
+    "order": 4,
+    "title": "大金",
+    "subtitle": "04 · POSTER",
+    "className": "gm-card poster-card"
+  },
+  "garage_dawan.jpeg": {
+    "order": 5,
+    "title": "大腕",
+    "subtitle": "05 · POSTER",
+    "className": "gm-card poster-card"
+  },
+  "garage_churchill.jpeg": {
+    "order": 6,
+    "title": "丘吉尔 Mk.VII",
+    "subtitle": "06 · POSTER",
+    "className": "gm-card poster-card"
+  },
+  "garage_atom.jpeg": {
+    "order": 7,
+    "title": "A-TOM",
+    "subtitle": "07 · POSTER",
+    "className": "gm-card poster-card"
+  },
+  "garage_group_keyvisual.jpg": {
+    "order": 2,
+    "title": "GARAGE MILITIA",
+    "subtitle": "02 · KEY VISUAL",
+    "className": "gm-card poster-card"
+  }
+}

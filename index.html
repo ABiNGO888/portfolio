@@ -1,0 +1,1914 @@
+<!doctype html>
+<html lang="zh-Hans">
+<!-- HOME HERO v29: supplied artwork shown in full, never cropped; aligned left within hero art panel -->
+<!-- XOLOme P04 FIX v2: VIDEO FIRST / IMAGE FOLLOW / SAME HEIGHT / HORIZONTAL ROW -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050505">
+<title>ABiNGO / 王盛业 — Personal Brand Portfolio v30 FOLDER MEDIA</title>
+<meta name="description" content="ABiNGO / 王盛业个人品牌作品站：原创 IP、品牌赋能、全息技术、游戏与音乐。">
+<style>
+:root{
+  --bg:#050505;--ink:#f5f4ef;--muted:#8d8d8d;--line:rgba(255,255,255,.12);
+  --acid:#7cff42;--axi:#219ff0;--gm-cyan:#39e8ff;--gm-mag:#ff3e9f;--gm-orange:#ff7a2d;
+  --gallery-h:56vh;--gallery-h-mobile:50vh;
+  --zh-font:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Source Han Sans SC","Noto Sans CJK SC",sans-serif;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);scroll-behavior:smooth}
+/* 简/繁字体栈：系统语言为繁体时由 JS 给 <html> 加 .lang-zh-hant 切换 */
+html.lang-zh-hant{--zh-font:"PingFang TC","Microsoft JhengHei","Heiti TC","Source Han Sans TC","Noto Sans CJK TC",sans-serif}
+html.zh-pending{color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Helvetica Neue",Arial,var(--zh-font);overflow-x:hidden}
+a{color:inherit;text-decoration:none} img,video{display:block;max-width:100%}
+::selection{background:var(--acid);color:#050505}
+.grain{position:fixed;inset:0;z-index:100;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+.topnav{position:fixed;z-index:90;top:0;left:0;right:0;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 3.4vw;background:linear-gradient(to bottom,rgba(0,0,0,.75),rgba(0,0,0,0));border-bottom:1px solid transparent;transition:.25s}
+.topnav.scrolled{background:rgba(5,5,5,.82);backdrop-filter:blur(16px);border-color:var(--line)}
+.brand{font-size:14px;font-weight:850;letter-spacing:.09em}.brand small{margin-left:10px;color:#777;font-weight:500;letter-spacing:.04em}
+.links{display:flex;gap:26px;margin-right:66px;font-size:10px;letter-spacing:.16em;color:#969696}.links a:hover{color:#fff}
+.yearrail{position:fixed;left:16px;top:50%;z-index:70;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px}
+.yearrail a{font-size:9px;letter-spacing:.14em;color:#444;transition:.2s}.yearrail a::before{content:"";display:inline-block;width:10px;height:1px;background:currentColor;margin-right:7px;vertical-align:middle}.yearrail a.active{color:#fff;transform:translateX(5px)}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s cubic-bezier(.2,.72,.2,1)}.reveal.show{opacity:1;transform:none}
+.kicker{font-size:10px;letter-spacing:.23em;text-transform:uppercase;color:#858585;margin-bottom:18px}
+.pills{display:flex;gap:8px;flex-wrap:wrap}.pill{border:1px solid var(--line);border-radius:99px;padding:8px 11px;font-size:9px;letter-spacing:.14em;color:#aaa;background:rgba(255,255,255,.02)}
+.pill.live::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--acid);box-shadow:0 0 12px var(--acid);margin-right:8px}
+
+/* HERO */
+.hero{min-height:100svh;position:relative;display:grid;grid-template-columns:minmax(0,53%) minmax(420px,47%);align-items:stretch;padding-top:70px;overflow:hidden;background:#050505}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 73% 39%,rgba(57,232,255,.105),transparent 20%),radial-gradient(circle at 92% 74%,rgba(124,255,66,.08),transparent 22%),radial-gradient(circle at 20% 20%,rgba(255,255,255,.055),transparent 30%),linear-gradient(135deg,#0b0b0b,#030303 62%);pointer-events:none}
+.hero-grid{position:absolute;inset:70px 0 0 0;opacity:.19;background-image:linear-gradient(rgba(255,255,255,.043) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.043) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,black,transparent 97%)}
+.hero-copy{position:relative;z-index:4;padding:10vh 3.5vw 10vh 6vw;display:flex;flex-direction:column;justify-content:center;max-width:none}
+.hero-number{position:absolute;top:7vh;left:6vw;font-size:10px;letter-spacing:.2em;color:#5b5b5b}.hero-number b{color:#bdbdbd;font-weight:600}
+.hero h1{margin:4px 0 0;font-size:clamp(86px,11vw,188px);line-height:.76;letter-spacing:-.082em;font-weight:950;position:relative}.hero h1::after{content:"";position:absolute;left:.02em;right:7%;bottom:-.12em;height:2px;background:linear-gradient(90deg,var(--acid),var(--gm-cyan),transparent 74%)}
+.hero-name{margin-top:34px;font-size:clamp(26px,3vw,50px);letter-spacing:.025em}.hero-name span{color:#686868}
+.hero-role{margin-top:16px;font-size:11px;line-height:1.7;letter-spacing:.17em;color:#7f7f7f;text-transform:uppercase}
+.hero-statement{max-width:720px;margin-top:28px;font-size:clamp(19px,1.9vw,30px);line-height:1.45;color:#d7d7d7}.hero .pills{margin-top:30px}
+.hero-art{position:relative;z-index:3;min-height:calc(100svh - 70px);overflow:hidden;border-left:0;background:#000;isolation:isolate;display:flex;align-items:center;justify-content:flex-start}
+/* v27 — homepage right-side artwork: use the supplied image as the complete visual. */
+.hero-art::before,.hero-art::after{content:none!important;display:none!important}
+.hero-art-image{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;object-position:left center;background:#000;z-index:1;user-select:none;-webkit-user-drag:none}
+.hero-orbit{position:absolute;border:1px solid rgba(255,255,255,.15);border-radius:50%;left:50%;top:48%;transform:translate(-50%,-50%)}
+.orbit-a{width:min(34vw,590px);aspect-ratio:1}.orbit-b{width:min(25vw,430px);aspect-ratio:1;border-color:rgba(57,232,255,.22);transform:translate(-50%,-50%) rotate(23deg)}.orbit-c{width:min(16vw,275px);aspect-ratio:1;border-color:rgba(124,255,66,.28);box-shadow:0 0 80px rgba(124,255,66,.04) inset}
+.hero-crosshair{position:absolute;left:50%;top:48%;width:min(39vw,680px);height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);transform:translate(-50%,-50%)}.hero-crosshair::after{content:"";position:absolute;left:50%;top:-34vh;width:1px;height:68vh;background:linear-gradient(transparent,rgba(255,255,255,.2),transparent)}
+.hero-monogram{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:.04em;font-size:clamp(110px,15vw,260px);line-height:.72;font-weight:950;letter-spacing:-.12em;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.62);text-shadow:0 0 48px rgba(57,232,255,.05)}.hero-monogram span:last-child{transform:translateY(.28em);-webkit-text-stroke-color:rgba(124,255,66,.62)}
+.hero-signal{position:absolute;right:3vw;top:8vh;writing-mode:vertical-rl;font-size:9px;letter-spacing:.22em;color:#777}.hero-year{position:absolute;right:3vw;bottom:8vh;font-size:clamp(28px,3.5vw,58px);font-weight:850;letter-spacing:-.04em;color:#d7d7d7}
+.hero-index{position:absolute;font-size:8px;letter-spacing:.17em;color:#666}.hero-index::before{content:"";display:inline-block;width:20px;height:1px;background:currentColor;margin-right:8px;vertical-align:middle}.hero-index-a{left:6%;top:20%}.hero-index-b{left:13%;bottom:19%}.hero-index-c{right:16%;top:26%}.hero-index-d{right:10%;bottom:27%}
+.hero-marquee{position:absolute;z-index:5;left:0;right:0;bottom:0;height:34px;border-top:1px solid var(--line);background:rgba(3,3,3,.78);overflow:hidden;display:flex;align-items:center}.hero-marquee div{white-space:nowrap;font-size:8px;letter-spacing:.24em;color:#656565;animation:heroTicker 32s linear infinite}@keyframes heroTicker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* GENERIC */
+.story{min-height:72svh;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:1.2fr .8fr;gap:6vw;align-items:center;padding:8vh 7vw}
+.story h2{margin:0;font-size:clamp(52px,8.5vw,145px);line-height:.85;letter-spacing:-.068em}.story p{font-size:clamp(18px,2vw,28px);line-height:1.5;margin:0 0 30px}
+.path{border-top:1px solid var(--line)}.path div{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.08em}.path span{color:#666}
+.chapter{min-height:100svh;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(360px,36vw) 1fr;align-items:center}
+.copy{padding:5vh 4vw 5vh 6vw;position:sticky;top:70px;height:calc(100svh - 70px);display:flex;flex-direction:column;justify-content:center}
+.copy h2{margin:0 0 22px;font-size:clamp(48px,6.7vw,112px);line-height:.88;letter-spacing:-.06em}.value{font-size:clamp(18px,2vw,29px);line-height:1.42;max-width:570px}.desc{font-size:14px;line-height:1.75;color:#8c8c8c;max-width:520px;margin:17px 0 28px}
+.media{min-width:0;min-height:calc(100svh - 70px);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.gallery{width:100%;display:flex;align-items:center;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2.5vh 5vw;cursor:grab;scroll-padding-left:5vw;scroll-padding-right:5vw;min-height:0}.gallery::-webkit-scrollbar{display:none}.gallery:active{cursor:grabbing}
+.card{flex:0 0 min(66vw,880px);height:var(--gallery-h);min-height:430px;position:relative;overflow:hidden;border-radius:28px;background:#111;border:1px solid rgba(255,255,255,.08);scroll-snap-align:center;align-self:center}.card.small{flex-basis:min(40vw,600px)}
+.card img{width:100%;height:100%;object-fit:cover;background:transparent}.card video{width:100%;height:100%;object-fit:contain;background:#000}
+/* v17 — ADAPTIVE MEDIA FRAMES
+   JS assigns each media card its native aspect ratio. Cards therefore share
+   one visual height while their outer frames adapt to portrait / landscape media,
+   eliminating letterbox bars without cropping. */
+.gallery>article.auto-media-card{--gallery-media-h:var(--gallery-h);flex:0 0 auto!important;display:block!important;width:auto!important;height:var(--gallery-media-h)!important;min-height:430px!important;max-width:none!important;aspect-ratio:var(--media-ratio,4/3)!important;scroll-snap-align:center;overflow:hidden;align-self:center}
+.gallery>article.auto-media-card>img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;background:transparent!important}.gallery>article.auto-media-card>video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:contain!important;background:#000!important}
+.gallery>article.auto-media-card>.shade,.gallery>article.auto-media-card>.label{z-index:3}
+.shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.72),transparent 45%)}.label{position:absolute;left:25px;right:25px;bottom:22px;display:flex;justify-content:space-between;gap:18px;align-items:flex-end}.label b{font-size:18px}.label span{font-size:9px;letter-spacing:.16em;color:#aaa;text-align:right}
+/* 需求：所有图片/影片之上不显示任何文字（覆盖写死与 JS 动态生成的卡片） */
+.label,.shade,.tj-caption,.tj-video-note,.tj-count{display:none!important}
+.placeholder{height:100%;padding:34px;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at 72% 25%,rgba(124,255,66,.11),transparent 20%),#090909}.placeholder b{font-size:clamp(46px,7vw,108px);line-height:.83;letter-spacing:-.06em}.placeholder em{font-style:normal;font-size:10px;letter-spacing:.2em;color:#777}
+
+
+/* PAST WORK / PDF ARCHIVE */
+.archive-work{background:#080808}.archive-work .copy{background:linear-gradient(90deg,#080808 78%,rgba(8,8,8,.3))}.archive-work .value{color:#e2e2e2}.archive-work .desc{color:#848484}
+.archive-work .card{flex-basis:min(40vw,660px)}.archive-work .card.portrait-card{flex-basis:min(25vw,410px)}.archive-work .card img{object-fit:cover;background:transparent}
+.naruto-work{background:#0a0908}.naruto-work .kicker{color:#c98a45}.naruto-work .value{color:#eee4d8}.naruto-work .pill{border-color:rgba(232,146,55,.22);color:#c9ab89}.naruto-work .card{background:#120f0b}.naruto-work .card img{object-fit:cover;background:transparent}.naruto-work .card.device{flex-basis:min(34vw,560px)}.naruto-work .card.device img{object-fit:cover;background:transparent}
+.sandbox-work{background:#070a10}.sandbox-work .kicker{color:#6ea0ff}.sandbox-work .value{color:#dce6ff}.sandbox-work .pill{border-color:rgba(110,160,255,.22);color:#a7bcdf}.sandbox-work .card{background:#090d15}.sandbox-work .card img{object-fit:cover;background:transparent}.sandbox-work .card.portrait-card{flex-basis:min(27vw,440px)}.sandbox-work .card.device img{object-fit:cover;background:transparent}
+.legacy-note{font-size:10px;letter-spacing:.12em;color:#5e5e5e;line-height:1.7;margin-top:4px}
+
+/* PAGE 05 / COLLABORATIONS */
+.collabs{min-height:100svh;border-top:1px solid var(--line);padding:10vh 6vw;display:grid;grid-template-columns:minmax(280px,31%) 1fr;gap:7vw;align-items:center;background:radial-gradient(circle at 85% 18%,rgba(255,255,255,.055),transparent 24%),#050505}
+.collabs h2{margin:0;font-size:clamp(58px,8vw,136px);line-height:.82;letter-spacing:-.07em}.collabs .lead{margin-top:28px;max-width:460px;font-size:clamp(17px,1.7vw,25px);line-height:1.5;color:#cfcfcf}.collabs .desc{margin-top:18px}
+.collab-board{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;column-gap:3vw}.collab-item{min-height:92px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:42px 1fr auto;gap:14px;align-items:center}.collab-no{font-size:9px;letter-spacing:.14em;color:#4e4e4e}.collab-name{font-size:clamp(18px,2vw,31px);font-weight:750;letter-spacing:-.025em}.collab-name small{display:block;margin-top:5px;font-size:9px;font-weight:500;letter-spacing:.14em;color:#676767}.collab-type{font-size:8px;letter-spacing:.13em;color:#696969;border:1px solid var(--line);border-radius:99px;padding:7px 9px;white-space:nowrap}.collab-foot{grid-column:1/-1;margin-top:20px;color:#555;font-size:10px;line-height:1.7;letter-spacing:.08em}
+
+/* PRODUCT */
+.product{background:#070707;color:#e8e8e8}.product .kicker,.product .desc{color:#999}.product .pill{border-color:rgba(255,255,255,.14);color:#ccc}.product .card{background:#0c0c0c;border-color:rgba(255,255,255,.08);box-shadow:0 28px 90px rgba(0,0,0,.35)}
+/* P04 / XOLOme PRODUCT — keep video + images in one horizontal row at one common height.
+   Width follows each asset’s native aspect ratio; the first video is no longer allowed
+   to become an oversized standalone block. */
+.product .gallery{display:flex!important;flex-wrap:nowrap!important;align-items:center!important}
+.product .gallery>article.auto-media-card{
+  flex:0 0 auto!important;
+  width:auto!important;
+  aspect-ratio:var(--media-ratio,4/3)!important;
+  align-self:center!important;
+}
+.product .gallery>article.video-card>video{object-fit:contain!important;background:#000!important}
+.flow{height:100%;background:#0f0f0f;color:#e8e8e8;padding:38px;display:flex;flex-direction:column;justify-content:space-between}.flow b{font-size:clamp(44px,6vw,96px);line-height:.86;letter-spacing:-.06em}.flow small{letter-spacing:.18em;color:#888}
+.xolo-logo-lockup{display:flex;align-items:center;width:min(390px,80%);min-height:112px;padding:22px 28px;border-radius:22px;background:#070707;border:1px solid rgba(255,255,255,.08);box-shadow:0 24px 70px rgba(0,0,0,.18);margin:12px 0 4px}.xolo-logo-lockup img{display:block;width:100%;height:auto;object-fit:contain}.xolo-ip{background:radial-gradient(circle at 80% 18%,rgba(113,199,68,.08),transparent 26%),#070909}.xolo-ip .value{color:#eef3ef}.xolo-ip .desc{color:#88968f}.xolo-ip .pill{border-color:rgba(113,199,68,.18);color:#a9c5b0}.xolo-ip .gallery>article{background:#0c0f0d}.xolo-ip .gallery>article>img{background:#f4f1e8}.xolo-ip .label b{max-width:28ch}.xolo-ip .label span{color:#b9c8bd}
+
+.flow{height:100%;background:#0f0f0f;color:#e8e8e8;padding:38px;display:flex;flex-direction:column;justify-content:space-between}.flow b{font-size:clamp(44px,6vw,96px);line-height:.86;letter-spacing:-.06em}.flow small{letter-spacing:.18em;color:#888}
+
+/* SUPER AXI - merged into one blue section */
+.axi-onepage{min-height:100svh;position:relative;background:var(--axi);color:#123d26;padding:10vh 5vw 8vh;overflow:hidden;border-top:1px solid var(--line)}
+.axi-onepage::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 20%,rgba(255,255,255,.35),transparent 24%),radial-gradient(circle at 86% 30%,rgba(255,255,255,.12),transparent 20%),linear-gradient(180deg,rgba(255,255,255,.1),transparent 42%)}
+.axi-head{position:relative;z-index:2;display:grid;grid-template-columns:42% 58%;align-items:center;gap:3vw}
+.axi-copy{position:relative;z-index:2}.axi-copy h2{font-size:clamp(68px,10vw,165px);line-height:.8;letter-spacing:-.075em;margin:0;color:#fff;text-shadow:0 8px 0 rgba(15,70,30,.12)}.axi-copy h2 span{color:#ffd84b}.axi-copy p{font-size:clamp(18px,2vw,30px);line-height:1.42;max-width:560px;margin:28px 0}.axi-copy .kicker{color:#245734}.axi-copy .pill{border-color:rgba(15,70,30,.24);color:#163f27;background:rgba(255,255,255,.16)}
+.axi-cover{position:relative;z-index:2;justify-self:center;width:min(28vw,440px);aspect-ratio:941/1672;background:transparent;border-radius:30px;overflow:hidden;box-shadow:0 38px 110px rgba(3,60,100,.32);transform:rotate(2deg);border:0}.axi-cover img{width:100%;height:100%;object-fit:contain;object-position:center;display:block;background:transparent}
+.axi-gallery-wrap{position:relative;z-index:2;margin-top:5vh;padding-top:3vh;border-top:1px solid rgba(15,70,30,.18)}
+.axi-intro{max-width:980px;margin-bottom:10px}.axi-intro .kicker{color:#245734}.axi-intro .value{font-size:clamp(18px,2vw,29px);line-height:1.42;color:#f7fcff;max-width:980px}.axi-intro .desc{font-size:14px;line-height:1.75;color:#18435a;max-width:920px;margin:16px 0 24px}.axi-intro .pill{border-color:rgba(15,70,30,.24);color:#163f27;background:rgba(255,255,255,.16)}
+.axi-onepage .media{min-height:auto}.axi-onepage .gallery{padding:1vh 0 0;scroll-padding-left:0;scroll-padding-right:0}
+.axi-phone{flex:0 0 min(24vw,390px);height:var(--gallery-h);min-height:430px;border-radius:42px;scroll-snap-align:center;background:transparent;overflow:hidden;border:1px solid rgba(255,255,255,.12);position:relative;align-self:center}.axi-phone img{width:100%;height:100%;object-fit:contain;object-position:center;background:transparent}
+.axi-poster{flex:0 0 min(30vw,470px);height:var(--gallery-h);min-height:430px;border-radius:30px;overflow:hidden;scroll-snap-align:center;position:relative;align-self:center}.axi-poster img{width:100%;height:100%;object-fit:contain;object-position:center;background:transparent}
+
+/* GARAGE MILITIA */
+.gm-takeover{min-height:100svh;position:relative;background:#07101c;overflow:hidden;display:grid;grid-template-columns:42% 58%;align-items:center;padding:10vh 5vw 8vh}
+.gm-takeover::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(57,232,255,.13),transparent 22%),radial-gradient(circle at 82% 35%,rgba(255,62,159,.14),transparent 28%),linear-gradient(140deg,#0a1725,#05080d 60%,#140812)}
+.gm-copy{position:relative;z-index:2}.gm-copy h2{font-size:clamp(62px,9.2vw,150px);line-height:.8;letter-spacing:-.07em;margin:0;color:#fff}.gm-copy h2 span{color:var(--gm-cyan)}.gm-copy p{font-size:clamp(18px,2vw,29px);line-height:1.45;max-width:590px;color:#c8d7df;margin:28px 0}.gm-copy .pill{border-color:rgba(80,220,255,.2);color:#a8d7df;background:rgba(20,50,70,.28)}
+.gm-cover{position:relative;z-index:2;justify-self:center;width:min(31vw,510px);height:min(72vh,840px);border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,.13);box-shadow:0 40px 120px rgba(0,0,0,.45);transform:rotate(-1.5deg)}.gm-cover img{width:100%;height:100%;object-fit:cover;background:transparent}.gm-cover video{width:100%;height:100%;object-fit:contain;background:#000}
+.gm-world{background:#05080d}.gm-world .copy{overflow:visible}.gm-world .copy .value{color:#d7edf4}.gm-world .copy .desc{color:#91a6b0}.gm-world .pill{border-color:rgba(57,232,255,.18);color:#95b9c2}
+.gm-card{flex:0 0 auto;height:var(--gallery-h);min-height:430px;border-radius:28px;overflow:hidden;scroll-snap-align:center;position:relative;background:#0b0f16;border:1px solid rgba(255,255,255,.1);align-self:center}.gm-card img{width:100%;height:100%;object-fit:cover;background:transparent}.gm-card video{width:100%;height:100%;object-fit:contain;background:#000}
+.gm-card.poster-card{flex-basis:auto}.gm-card.poster-card img{object-fit:cover;background:transparent}.gm-card.op-card{flex-basis:auto}.gm-card video{object-fit:contain;background:#000}
+.gm-character-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;margin:24px 0 26px;max-width:590px}.gm-character{padding-top:10px;border-top:1px solid rgba(57,232,255,.14);font-size:11px;line-height:1.65;color:#8097a2}.gm-character b{display:block;margin-bottom:3px;color:#d8edf3;font-size:12px;font-weight:700;letter-spacing:.02em}.gm-world .copy>.reveal{position:relative;z-index:2}
+.gm-game-intro{min-height:100svh;position:relative;background:#0b0f16;overflow:hidden;display:grid;grid-template-columns:42% 58%;align-items:center;padding:10vh 5vw 8vh;border-top:1px solid var(--line)}
+.gm-game-intro::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 22%,rgba(255,122,45,.12),transparent 22%),radial-gradient(circle at 82% 36%,rgba(57,232,255,.12),transparent 28%),linear-gradient(140deg,#0b0f16,#05080d 62%,#130b08)}
+.gm-game-copy{position:relative;z-index:2}.gm-game-copy h2{font-size:clamp(58px,8.7vw,145px);line-height:.8;letter-spacing:-.07em;margin:0;color:#fff}.gm-game-copy h2 span{color:var(--gm-orange)}.gm-game-copy p{font-size:clamp(18px,2vw,28px);line-height:1.45;max-width:590px;color:#d7dde2;margin:28px 0}.gm-game-copy .pill{border-color:rgba(255,122,45,.18);color:#d6c7bd;background:rgba(50,20,10,.22)}
+.gm-game-cover{position:relative;z-index:2;justify-self:center;width:min(31vw,510px);height:min(72vh,840px);border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,.13);box-shadow:0 40px 120px rgba(0,0,0,.45);transform:rotate(1.5deg)}.gm-game-cover video{width:100%;height:100%;object-fit:contain;background:#000}
+.gm-game-gallery{background:#08090c}.gm-game-gallery .copy .value{color:#f1e1d5}.gm-game-gallery .copy .desc{color:#8e8a85}.gm-game-gallery .pill{border-color:rgba(255,122,45,.16);color:#c9b3a1}
+.gm-skill-card{flex:0 0 min(28vw,440px);height:var(--gallery-h);min-height:430px;border-radius:28px;overflow:hidden;scroll-snap-align:center;position:relative;background:#0b0f16;border:1px solid rgba(255,255,255,.1);align-self:center}.gm-skill-card video{width:100%;height:100%;object-fit:contain;background:#000}
+.gm-game-wait{display:none}
+.gm-game-wait h3{margin:0;font-size:clamp(52px,8vw,125px);line-height:.84;letter-spacing:-.06em}.gm-game-wait p{font-size:clamp(18px,2vw,27px);line-height:1.55;color:#929ba0;max-width:640px}
+.gm-game-wait .box{border:1px dashed rgba(255,255,255,.18);border-radius:28px;min-height:340px;display:flex;align-items:flex-end;padding:28px;background:linear-gradient(135deg,rgba(57,232,255,.06),transparent 42%),linear-gradient(315deg,rgba(255,62,159,.07),transparent 35%)}.box b{font-size:clamp(34px,4vw,70px);line-height:.92}.box small{display:block;margin-top:16px;color:#5f6a70;letter-spacing:.14em}
+
+/* DRAGON PLANET / 龙宝星球 — media-ready project section. */
+.dragon-planet{background:radial-gradient(circle at 72% 22%,rgba(97,151,255,.10),transparent 25%),linear-gradient(135deg,#07101a,#05070b 62%,#080d18)}
+.dragon-planet .copy .value{color:#dbe8ff}.dragon-planet .copy .desc{color:#7d8da6}.dragon-planet .pill{border-color:rgba(115,163,255,.20);color:#9eb7df}.dragon-planet .gallery>article{flex:0 0 min(56vw,720px);height:var(--gallery-h);min-height:430px;border-radius:28px;overflow:hidden;position:relative;background:#0a1020;border:1px solid rgba(97,151,255,.1);scroll-snap-align:center;align-self:center}.dragon-planet .gallery>article img{width:100%;height:100%;object-fit:cover}.dragon-planet .gallery>article video{width:100%;height:100%;object-fit:contain;background:#000}
+.dragon-placeholder{flex:0 0 min(52vw,760px);height:var(--gallery-h);min-height:430px;border-radius:28px;overflow:hidden;scroll-snap-align:center;position:relative;align-self:center;border:1px solid rgba(135,170,255,.13);background:radial-gradient(circle at 74% 24%,rgba(109,152,255,.15),transparent 20%),linear-gradient(145deg,#101928,#070a10)}
+.dragon-placeholder .placeholder{background:transparent}.dragon-placeholder .placeholder b{font-size:clamp(38px,5.2vw,82px);color:#eef4ff}.dragon-placeholder .placeholder em{color:#73839d}
+.dragon-material-note{display:none;margin-top:18px;padding:12px 14px;border:1px dashed rgba(155,184,255,.18);border-radius:12px;color:#72829a;font-size:10px;line-height:1.65;letter-spacing:.04em}
+
+/* TJ / LIN TONGJIE — ARTIST PROFILE */
+.tj-profile{min-height:100svh;border-top:1px solid var(--line);background:radial-gradient(circle at 80% 16%,rgba(187,67,60,.12),transparent 26%),linear-gradient(135deg,#0a0909,#050505 58%,#0a0606);display:grid;grid-template-columns:minmax(340px,30%) minmax(430px,35%) minmax(430px,35%);gap:0;overflow:hidden;align-items:stretch}
+.tj-profile-photo{position:relative;min-height:100svh;border-right:1px solid var(--line);overflow:hidden;background:#0d0d0f}.tj-profile-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.58),transparent 34%),linear-gradient(90deg,rgba(5,5,5,.10),transparent 24%,transparent 82%,rgba(5,5,5,.12));pointer-events:none}.tj-profile-photo .mark{position:absolute;z-index:3;left:2.2vw;bottom:4vh}.tj-profile-photo .mark b{display:block;font-size:clamp(52px,5.5vw,90px);line-height:.82;letter-spacing:-.065em}.tj-profile-photo .mark span{display:block;margin-top:12px;font-size:12px;letter-spacing:.2em;color:#d1bab6}
+.tj-slideshow{position:absolute;inset:0;overflow:hidden}.tj-slide-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;opacity:0;transition:opacity .9s ease-in-out;will-change:opacity}.tj-slide-image.active{opacity:1}
+.tj-profile-info{padding:8.5vh 3vw 7vh;display:flex;flex-direction:column;justify-content:flex-start;min-width:0}.tj-profile-info .kicker{color:#c65f58;font-size:clamp(13px,1.05vw,16px);letter-spacing:.16em}.tj-profile-info h2{margin:12px 0 0;font-size:clamp(68px,6.2vw,108px);line-height:.88;letter-spacing:-.055em}.tj-profile-info h2 span{display:block;margin-top:14px;font-size:.25em;line-height:1;letter-spacing:.14em;color:#d0645d}.tj-profile-bio{font-size:clamp(24px,2vw,34px);line-height:1.5;color:#eee0de;margin:32px 0 28px;max-width:28ch}.tj-facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:6px}.tj-fact{padding:17px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:96px 1fr;gap:14px;font-size:16px;line-height:1.5}.tj-fact b{color:#c65f58;font-weight:700;font-size:15px;letter-spacing:.02em}.tj-fact span{color:#d8d0cf;font-size:16px}.tj-profile-position{margin-top:24px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px 20px}.tj-position-row{font-size:15px;line-height:1.55;color:#b0a4a1}.tj-position-row b{display:inline-block;min-width:62px;color:#e2ceca;font-size:12px;letter-spacing:.13em}.tj-keywords{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.tj-keywords span{font-size:12px;letter-spacing:.12em;color:#d2b6b2;border:1px solid rgba(198,95,88,.25);border-radius:99px;padding:9px 13px;background:rgba(198,95,88,.05)}.tj-look-strip{display:none!important}
+.tj-album{position:relative;padding:8.5vh 3vw 7vh;border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-start;overflow:hidden}.tj-album::before{content:"01";position:absolute;right:-.02em;top:.02em;font-size:clamp(180px,20vw,360px);line-height:.8;font-weight:950;letter-spacing:-.09em;color:rgba(184,81,75,.045);pointer-events:none}.tj-album-head{position:relative;z-index:2;margin-bottom:30px}.tj-album-head small{font-size:13px;letter-spacing:.16em;color:#c2665f}.tj-album-head h3{margin:12px 0 0;font-size:clamp(58px,5vw,88px);line-height:.9;letter-spacing:-.05em}.tj-album-head p{margin:15px 0 0;font-size:16px;color:#9d8d8a;letter-spacing:.07em}.tj-tracklist{position:relative;z-index:2;counter-reset:track;display:grid;grid-template-columns:1fr 1fr;column-gap:28px;border-top:1px solid var(--line)}.tj-track{counter-increment:track;display:grid;grid-template-columns:40px 1fr;align-items:center;gap:11px;min-height:66px;border-bottom:1px solid var(--line);font-size:clamp(20px,1.7vw,27px);line-height:1.28;color:#f0e8e6}.tj-track::before{content:counter(track,decimal-leading-zero);font-size:12px;letter-spacing:.11em;color:#90716d}.tj-album-foot{position:relative;z-index:2;margin-top:24px;font-size:14px;line-height:1.65;color:#8f7f7c;letter-spacing:.08em}.tj-album-foot b{color:#ce6d66}
+
+/* TJ / LIN TONGJIE — MUSIC SLIDESHOW */
+.tj-show{
+  min-height:100svh;position:relative;overflow:hidden;
+  background:#090808;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:38% 62%;align-items:stretch;
+}
+.tj-copy{
+  position:relative;z-index:5;padding:10vh 3.5vw 10vh 6vw;
+  display:flex;flex-direction:column;justify-content:center;gap:4vh;
+  background:linear-gradient(90deg,#090808 76%,rgba(9,8,8,.2));
+}
+.tj-copy h2{
+  margin:0;font-size:clamp(70px,10vw,170px);line-height:.78;
+  letter-spacing:-.075em;font-weight:950;
+}
+.tj-copy h2 span{color:#dc6f96}
+.tj-lead{
+  max-width:560px;font-size:clamp(18px,1.8vw,27px);
+  line-height:1.48;color:#d7cdd0;margin:26px 0;
+}
+.tj-meta{font-size:12px;letter-spacing:.15em;color:#806d74;line-height:1.8}
+.tj-meta #tjNowPlaying{color:#ffd0e0;font-weight:700}
+.tj-track-no{color:#9a8a90;font-size:11px;margin-left:8px;letter-spacing:.1em}
+.tj-player{
+  margin-top:0;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);
+}
+.tj-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.tj-play,.tj-mute,.tj-prev,.tj-next{
+  border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.04);
+  color:white;border-radius:99px;height:44px;padding:0 18px;cursor:pointer;
+  font-size:12px;letter-spacing:.11em
+}
+.tj-prev,.tj-next,.tj-mute{width:42px;padding:0;display:grid;place-items:center}
+.tj-play:hover,.tj-mute:hover,.tj-prev:hover,.tj-next:hover{background:rgba(255,255,255,.1)}
+.tj-time{font-size:12px;letter-spacing:.1em;color:#766a6e;min-width:100px}
+.tj-progress{
+  width:100%;height:3px;margin-top:17px;background:rgba(255,255,255,.12);
+  position:relative;cursor:pointer
+}
+.tj-progress span{display:block;height:100%;width:0;background:#dc6f96}
+.tj-volume{width:100px;accent-color:#dc6f96}
+.tj-stage{position:relative;overflow:hidden;min-width:0;background:#050505;display:flex;align-items:center;justify-content:center}
+.tj-slide{
+  position:absolute;inset:0;opacity:0;transition:opacity 1.05s ease;
+  display:flex;align-items:center;justify-content:center;
+  padding:2.5vh 2.5vw;pointer-events:none
+}
+.tj-slide.active{opacity:1;z-index:2}
+.tj-slide img{
+  width:100%;height:100%;object-fit:contain;background:#050505;
+  box-shadow:none
+}
+.tj-slide video{
+  width:100%;height:100%;object-fit:contain;background:#050505;
+  box-shadow:none;cursor:zoom-in
+}
+.tj-slide .tj-video-note{position:absolute;right:4vw;bottom:5vh;z-index:6;font-size:11px;letter-spacing:.12em;color:#aaa;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.1);padding:8px 12px;border-radius:99px;backdrop-filter:blur(8px);pointer-events:none}
+.tj-caption{
+  position:absolute;left:3vw;bottom:5vh;z-index:5;
+  font-size:13px;letter-spacing:.15em;color:#d1c5c8;
+  background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.1);
+  padding:10px 14px;border-radius:99px;backdrop-filter:blur(10px)
+}
+.tj-count{
+  position:absolute;right:3vw;top:5vh;z-index:5;font-size:13px;
+  letter-spacing:.15em;color:#8b7c81
+}
+.tj-pulse{
+  display:inline-block;width:7px;height:7px;border-radius:50%;
+  background:#dc6f96;margin-right:8px;box-shadow:0 0 15px #dc6f96;
+  opacity:.35
+}
+.tj-show.playing .tj-pulse{opacity:1;animation:tjpulse .8s ease-in-out infinite alternate}
+@keyframes tjpulse{to{transform:scale(1.5);opacity:.45}}
+
+/* NEXT + CONTACT */
+.next{min-height:72svh;padding:10vh 7vw;border-top:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}.next h2{margin:0;font-size:clamp(58px,10vw,170px);line-height:.82;letter-spacing:-.07em}.next p{max-width:760px;color:#898989;font-size:18px;line-height:1.6}.nextcard{margin-top:36px;max-width:780px;min-height:260px;border:1px solid var(--line);border-radius:26px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,#0b0b0b,#050505)}.nextcard b{font-size:clamp(36px,5vw,78px);line-height:.9}.nextcard span{font-size:10px;letter-spacing:.18em;color:#666}
+.contact{min-height:100svh;padding:12vh 6vw;display:flex;flex-direction:column;justify-content:space-between;border-top:1px solid var(--line);background:radial-gradient(circle at 80% 30%,rgba(124,255,66,.08),transparent 24%),#030303}.mega{font-size:clamp(70px,13vw,210px);line-height:.8;letter-spacing:-.075em;font-weight:950}.mega span{color:var(--acid)}.contact footer{display:flex;justify-content:space-between;gap:30px;color:#777;font-size:11px;line-height:1.7}
+.home-btn{display:inline-flex;align-items:center;gap:10px;align-self:center;margin-top:42px;padding:15px 30px;border:1px solid rgba(124,255,66,.34);border-radius:99px;background:rgba(124,255,66,.08);color:#d8ffca;font-size:13px;font-weight:700;letter-spacing:.10em;text-decoration:none;cursor:pointer;transition:.2s}.home-btn:hover{background:rgba(124,255,66,.16);border-color:rgba(124,255,66,.6);color:#fff;transform:translateY(-2px)}
+
+
+.gallery-counter{
+  position:absolute;right:5vw;bottom:5.5vh;z-index:12;
+  font-size:10px;letter-spacing:.16em;color:#b5b5b5;
+  padding:8px 11px;border-radius:99px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(0,0,0,.58);backdrop-filter:blur(10px);
+  pointer-events:none
+}
+.product .gallery-counter{
+  color:#262626;background:rgba(255,255,255,.78);
+  border-color:rgba(0,0,0,.12)
+}
+
+
+.video-preview{cursor:zoom-in}
+
+.gm-game-cover:has(.video-preview),
+.gm-card:has(.video-preview),
+.gm-skill-card:has(.video-preview),
+.video-card:has(.video-preview){
+  cursor:zoom-in;
+}
+
+
+.video-card .shade,
+.gm-card .shade,
+.gm-skill-card .shade,
+.video-card .label,
+.gm-card .label,
+.gm-skill-card .label{
+  pointer-events:none;
+}
+.video-preview.is-active-preview{
+  outline:1px solid rgba(255,255,255,.08);
+}
+
+
+/* EDIT MODE — direct file save: edits are written into index.html + media_manifest.js; no old-version backup is kept. */
+.edit-entry{position:fixed;right:3.4vw;top:18px;z-index:9997;height:30px;padding:0 11px;border:1px solid rgba(255,255,255,.14);border-radius:99px;background:rgba(8,8,8,.48);backdrop-filter:blur(12px);color:#8f8f8f;font-size:8px;font-weight:700;letter-spacing:.16em;cursor:pointer;transition:.2s;display:none!important}.edit-entry:hover{color:#fff;border-color:rgba(124,255,66,.35);background:rgba(8,8,8,.8)}
+.dev-toolbar{position:fixed;right:18px;top:76px;z-index:9998;display:none;align-items:center;gap:7px;padding:9px 10px;border:1px solid rgba(124,255,66,.32);border-radius:14px;background:rgba(5,5,5,.94);backdrop-filter:blur(16px);box-shadow:0 14px 50px rgba(0,0,0,.38);font-size:9px;letter-spacing:.09em;color:#c8c8c8;user-select:none}.dev-toolbar b{color:var(--acid);font-size:9px;letter-spacing:.14em;white-space:nowrap}.dev-toolbar .dev-label{color:#777;white-space:nowrap}.dev-toolbar button{height:30px;min-width:34px;padding:0 10px;border:1px solid rgba(255,255,255,.16);border-radius:9px;background:#111;color:#eee;font:inherit;cursor:pointer;white-space:nowrap}.dev-toolbar button:hover{border-color:rgba(124,255,66,.5);color:#fff}.dev-toolbar button:disabled{opacity:.45;cursor:wait;border-color:rgba(255,255,255,.12);color:#777}.dev-toolbar .dev-primary{background:rgba(124,255,66,.1);border-color:rgba(124,255,66,.34);color:#d8ffca}.dev-toolbar .dev-color{width:34px;height:30px;padding:2px;border:1px solid rgba(255,255,255,.16);border-radius:9px;background:#111;cursor:pointer}.dev-toolbar .dev-color::-webkit-color-swatch-wrapper{padding:2px}.dev-toolbar .dev-color::-webkit-color-swatch{border:0;border-radius:5px}.dev-toolbar .dev-color::-moz-color-swatch{border:0;border-radius:5px}.dev-toolbar .dev-danger{border-color:rgba(255,100,100,.22);color:#d9a0a0}.dev-save-state{min-width:56px;color:#777;white-space:nowrap}.dev-toast{position:fixed;left:50%;bottom:26px;z-index:10002;transform:translate(-50%,15px);opacity:0;pointer-events:none;background:rgba(8,8,8,.92);border:1px solid rgba(124,255,66,.28);border-radius:99px;padding:9px 13px;color:#b7d9a8;font-size:9px;letter-spacing:.10em;transition:.2s}.dev-toast.show{opacity:1;transform:translate(-50%,0)}
+body.dev-mode .edit-entry{display:none}body.dev-mode .dev-toolbar{display:flex}body.dev-mode [data-dev-key]{outline:none!important;box-shadow:none!important;border-color:inherit!important}body.dev-mode [data-dev-key][contenteditable="true"]{outline:none!important;box-shadow:none!important;cursor:text}body.dev-mode [data-dev-key][contenteditable="true"]:focus{outline:none!important;box-shadow:none!important;border-color:inherit!important;background:transparent!important}body.dev-mode .gallery{scroll-snap-type:none;cursor:default}body.dev-mode .gallery>article{cursor:grab;outline:none!important;box-shadow:none!important;transition:opacity .12s,transform .12s}body.dev-mode .gallery>article:hover{outline:none!important;box-shadow:none!important}body.dev-mode .gallery>article.dev-dragging{opacity:.34;transform:scale(.985);cursor:grabbing}body.dev-mode .dragon-material-note{display:block}
+body.dev-mode .gallery::before{content:none!important;display:none!important}
+
+
+.video-modal{
+  position:fixed;inset:0;z-index:300;
+  display:none;align-items:center;justify-content:center;
+  background:#000;
+  padding:0;overflow:hidden
+}
+.video-modal.open{display:flex}
+.video-modal video{
+  display:block;width:100vw;height:100vh;height:100dvh;
+  max-width:none;max-height:none;
+  object-fit:contain;background:#000;
+  box-shadow:none
+}
+.video-close{
+  position:fixed;right:22px;top:20px;z-index:9999;
+  width:40px;height:40px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.28);
+  background:rgba(18,18,18,.72);color:#fff;
+  display:grid;place-items:center;cursor:pointer;
+  font-size:22px;line-height:1;
+  backdrop-filter:blur(10px)
+}
+.video-close:hover{background:rgba(255,255,255,.14)}
+.video-modal-note{
+  position:fixed;left:22px;bottom:18px;z-index:301;
+  color:#777;font-size:10px;letter-spacing:.14em;pointer-events:none
+}
+body.video-open{overflow:hidden}
+
+@media(max-width:1050px){
+  .yearrail,.links{display:none}.topnav{height:60px;padding:0 20px}.hero{display:block;padding-top:60px;min-height:100svh}.hero-grid{inset:60px 0 0 0}.hero-copy{min-height:60svh;padding:96px 22px 56px}.hero-number{top:30px;left:22px}.hero h1{font-size:22vw}.hero-name{font-size:8vw}.hero-art{height:42svh;min-height:330px;border-left:0;border-top:1px solid var(--line)}.hero-art::before{width:76vw}.orbit-a{width:72vw}.orbit-b{width:54vw}.orbit-c{width:34vw}.hero-monogram{font-size:32vw}.hero-signal{right:18px;top:28px}.hero-year{right:20px;bottom:42px;font-size:9vw}.hero-index-a{left:7%;top:18%}.hero-index-b{left:9%;bottom:18%}.hero-index-c{right:18%;top:24%}.hero-index-d{right:12%;bottom:27%}.hero-marquee{height:30px}
+  .story{grid-template-columns:1fr;padding:76px 22px 52px}.chapter{display:block;min-height:auto}.copy{position:relative;top:auto;height:auto;min-height:48svh;padding:76px 22px 28px;justify-content:center}.media{min-height:auto}.gallery{padding:2vh 22px 44px;gap:14px;min-height:0}.card,.card.small{flex-basis:82vw;height:var(--gallery-h-mobile);min-height:350px;border-radius:21px}.gallery>article.auto-media-card{--gallery-media-h:var(--gallery-h-mobile);min-height:350px!important;border-radius:21px}.archive-work .card,.archive-work .card.portrait-card,.naruto-work .card.device,.sandbox-work .card.portrait-card{flex-basis:82vw}.collabs{display:block;padding:76px 22px 52px}.collab-board{grid-template-columns:1fr;margin-top:42px}.collab-item{min-height:82px}.collab-type{display:none}
+  .axi-onepage,.gm-takeover,.gm-game-intro{display:block;padding:84px 22px 48px;min-height:auto}.axi-head{display:block}.axi-copy h2,.gm-copy h2,.gm-game-copy h2{font-size:20vw}.axi-cover{width:82vw;aspect-ratio:941/1672;margin:28px auto 0;transform:none;max-height:96svh}.gm-cover,.gm-game-cover{width:82vw;height:56svh;margin:28px auto 0;transform:none}.axi-gallery-wrap{margin-top:24px;padding-top:20px}
+  .axi-phone{flex-basis:76vw;height:var(--gallery-h-mobile);min-height:350px;border-radius:32px}.axi-poster{flex-basis:78vw;height:var(--gallery-h-mobile);min-height:350px}
+  .gm-world .copy{padding-bottom:34px}.gm-character-grid{grid-template-columns:1fr;gap:8px}.dragon-placeholder{flex-basis:82vw;height:var(--gallery-h-mobile);min-height:350px;border-radius:21px}.gm-card,.gm-card.poster-card,.gm-card.op-card{flex-basis:auto;height:var(--gallery-h-mobile);min-height:350px}.gm-skill-card{flex-basis:auto;height:var(--gallery-h-mobile);min-height:350px}.gallery-counter{right:22px;bottom:22px}.edit-entry{right:20px;top:14px}.dev-toolbar{right:10px;top:66px;max-width:calc(100vw - 20px);flex-wrap:wrap;gap:6px}.dev-toolbar .dev-label{display:none}
+  .gm-game-wait{grid-template-columns:1fr;padding:84px 22px}.tj-profile{display:block;min-height:auto}.tj-profile-photo{min-height:86svh;border-right:0;border-bottom:1px solid var(--line)}.tj-profile-photo .mark{left:22px;bottom:30px}.tj-profile-info{padding:76px 22px 54px}.tj-facts{grid-template-columns:1fr}.tj-profile-position{grid-template-columns:1fr}.tj-album{padding:72px 22px 62px;border-left:0;border-top:1px solid var(--line)}.tj-tracklist{grid-template-columns:1fr}.tj-track{min-height:52px}.tj-show{display:block;min-height:auto}.tj-copy{padding:84px 22px 36px;background:#090808}.tj-copy h2{font-size:22vw}.tj-stage{height:68svh}.tj-slide{padding:12px}.tj-caption{left:22px;bottom:22px}.tj-count{right:22px;top:22px}.tj-volume{width:82px}.next{padding:84px 22px}.contact{padding:84px 22px 36px}.contact footer{display:block}  .video-modal{padding:0}.video-modal video{width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;object-fit:contain}.video-close{right:12px;top:12px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<button class="edit-entry" id="devEntry" type="button" aria-label="进入文字编辑模式">EDIT</button>
+<div class="dev-toolbar" id="devToolbar" aria-hidden="true">
+  <b>EDIT MODE</b><span class="dev-label">TEXT SIZE</span>
+  <button type="button" id="devFontMinus" title="减小当前文字字号">A−</button>
+  <button type="button" id="devFontPlus" title="放大当前文字字号">A＋</button>
+  <button type="button" id="devFontReset" title="恢复当前文字默认字号">Reset</button>
+  <span class="dev-label">字距</span>
+  <button type="button" id="devLetterMinus" title="减小当前文字字距">字距−</button>
+  <button type="button" id="devLetterPlus" title="增大当前文字字距">字距＋</button>
+  <button type="button" id="devLetterReset" title="恢复当前文字默认字距">↺</button>
+  <span class="dev-label">行距</span>
+  <button type="button" id="devLineMinus" title="减小当前文字行距">行距−</button>
+  <button type="button" id="devLinePlus" title="增大当前文字行距">行距＋</button>
+  <button type="button" id="devLineReset" title="恢复当前文字默认行距">↺</button>
+  <span class="dev-label">COLOR</span>
+  <input class="dev-color" id="devColor" type="color" value="#f5f4ef" title="修改当前文字颜色" aria-label="修改当前文字颜色">
+  <button type="button" id="devColorReset" title="恢复当前文字默认颜色">颜色重置</button>
+  <button type="button" class="dev-primary" id="devSave" title="通过 START.bat 本地服务直接覆盖 index.html 与 media_manifest.js；不会另存为新文件">SAVE / 覆盖原文件</button>
+  <button type="button" class="dev-danger" id="devResetSite" title="恢复网站默认文字与 Gallery 顺序">RESET / 恢复</button>
+  <button type="button" id="devExit" title="先覆盖保存，再退出编辑模式">EXIT / 保存退出</button>
+  <span class="dev-save-state" id="devSaveState">READY</span>
+</div>
+<div class="dev-toast" id="devToast">SAVED</div>
+
+<nav class="topnav" id="topnav">
+  <a class="brand" href="#top">ABiNGO <small>王盛业</small></a>
+  <div class="links">
+    <a href="#past">PAST WORK</a><a href="#collabs">IP / BRAND</a><a href="#story">STORY</a><a href="#product">PRODUCT</a><a href="#dragon">DRAGON</a><a href="#axi">NEW IP</a><a href="#tj-profile">TJ</a><a href="#contact">CONTACT</a>
+  </div>
+</nav>
+
+<div class="yearrail">
+  <a href="#top" data-id="top" class="active">NOW</a><a href="#past" data-id="past">PAST</a><a href="#naruto" data-id="naruto">NARUTO</a><a href="#sandbox" data-id="sandbox">SANDBOX</a><a href="#collabs" data-id="collabs">IP/BRAND</a><a href="#story" data-id="story">STORY</a><a href="#product" data-id="product">PRODUCT</a><a href="#xolo-ip" data-id="xolo-ip">筱7</a><a href="#dragon" data-id="dragon">DRAGON</a><a href="#axi" data-id="axi">AXI</a><a href="#gm" data-id="gm">GM</a><a href="#tj-profile" data-id="tj-profile">TJ</a><a href="#contact" data-id="contact">NEXT</a>
+</div>
+
+<section class="hero hero-abstract" id="top">
+  <div class="hero-grid"></div>
+  <div class="hero-copy reveal">
+    <div class="hero-number"><b>01</b> / PERSONAL BRAND PORTFOLIO</div>
+    <div class="kicker">IP CONTENT CREATOR / CONTENT × TECHNOLOGY × EXPERIENCE</div>
+    <h1>ABiNGO</h1>
+    <div class="hero-name">王盛业 <span>/ 缤谷王</span></div>
+    <div class="hero-role">ORIGINAL IP · BRAND IP · HOLOGRAM · INTERACTIVE · GAME · MUSIC</div>
+    <div class="hero-statement">从角色创作开始，持续探索如何让 IP 进入品牌、软件、互动、全息、游戏与音乐。</div>
+    <div class="pills"><span class="pill">IP CREATION</span><span class="pill">HOLOGRAM</span><span class="pill">INTERACTIVE</span><span class="pill">GAME</span><span class="pill">MUSIC IP</span></div>
+  </div>
+  <div class="hero-art reveal">
+    <img class="hero-art-image" src="MEDIA/HERO/ABINGO-THINK.png" alt="ABiNGO character universe artwork" draggable="false">
+  </div>
+  <div class="hero-marquee" aria-hidden="true"><div>ABiNGO · ORIGINAL IP · BRAND × IP · HOLOGRAM · INTERACTIVE · GAME · MUSIC · ABiNGO · ORIGINAL IP · BRAND × IP · HOLOGRAM · INTERACTIVE · GAME · MUSIC ·</div></div>
+</section>
+
+
+
+<section class="chapter archive-work" id="past">
+  <div class="copy reveal">
+    <div class="kicker">02 / PAST WORK — SELECTED HOLOGRAM PROJECTS</div><h2>BEFORE<br>NOW.</h2>
+    <div class="value">全息舱在B端的各种应用案例</div>
+    <div class="pills"><span class="pill">2022 WINTER OLYMPICS</span><span class="pill">AUDI</span><span class="pill">McDONALD'S</span><span class="pill">DYSON × AYAYI</span></div>
+    <div class="legacy-note">SCROLL / DRAG → 查看更多过往项目</div>
+  </div>
+  <div class="media"><div class="gallery">
+    <article class="card"><img src="MEDIA/P01/archive_olympics.jpg" alt="2022冬奥会六面全息舱项目"><div class="shade"></div><div class="label"><b>2022 Winter Olympics</b><span>6-PANEL HOLOGRAPHIC CHAMBER</span></div></article>
+    <article class="card"><img src="MEDIA/P01/archive_metro.jpg" alt="地铁四面全息广告"><div class="shade"></div><div class="label"><b>Metro Advertisement</b><span>4-PANEL HOLOGRAPHIC CHAMBER</span></div></article>
+    <article class="card portrait-card"><img src="MEDIA/P01/archive_audi.jpg" alt="AUDI品牌发布活动"><div class="shade"></div><div class="label"><b>AUDI</b><span>BRAND LAUNCH EVENT</span></div></article>
+    <article class="card portrait-card"><img src="MEDIA/P01/archive_mcdonalds.jpg" alt="麦当劳全息游戏区"><div class="shade"></div><div class="label"><b>McDonald's</b><span>HOLOGRAPHIC GAME ZONE</span></div></article>
+    <article class="card portrait-card"><img src="MEDIA/P01/archive_dyson_ayayi.jpg" alt="Dyson与AYAYI新品发布活动"><div class="shade"></div><div class="label"><b>Dyson × AYAYI</b><span>NEW PRODUCT LAUNCH</span></div></article>
+    <article class="card"><img src="MEDIA/P01/archive_mj.jpg" alt="Michael Jackson全息演唱会"><div class="shade"></div><div class="label"><b>Michael Jackson</b><span>HOLOGRAPHIC “RESURRECTION” CONCERT</span></div></article>
+    <article class="card portrait-card"><img src="MEDIA/P01/archive_asian_superstars.jpg" alt="亚洲巨星全息演唱会项目"><div class="shade"></div><div class="label"><b>Asian Superstars</b><span>HOLOGRAPHIC CONCERT</span></div></article>
+  </div></div>
+</section>
+
+<section class="chapter naruto-work" id="naruto">
+  <div class="copy reveal">
+    <div class="kicker">03 / PAST WORK — NARUTO × XOLOme</div><h2>BRING THE<br>COLLECTION<br>TO LIFE.</h2>
+    <div class="value">把收藏中的角色带进桌面场景：通过 3D 全息显示与 AI，让实体手办与数字角色体验形成联动。</div>
+    <div class="desc">项目素材包含桌面场景、设备展示与卡片触发体验，重点呈现“IP 收藏 → 数字内容 → 全息展示”的体验路径。</div>
+    <div class="pills"><span class="pill">NARUTO</span><span class="pill">3D HOLOGRAM</span><span class="pill">AI</span><span class="pill">COLLECTIBLE EXPERIENCE</span></div>
+  </div>
+  <div class="media"><div class="gallery">
+    <article class="card device"><img src="MEDIA/P02/naruto_device.jpg" alt="Naruto XOLOme设备主视觉"><div class="label"><b>NARUTO × XOLOme</b><span>HERO DEVICE</span></div></article>
+    <article class="card"><img src="MEDIA/P02/naruto_lifestyle.jpg" alt="火影忍者全息桌面生活场景"><div class="shade"></div><div class="label"><b>Bring the collections to life</b><span>LIFESTYLE</span></div></article>
+    <article class="card"><img src="MEDIA/P02/naruto_desk.jpg" alt="火影忍者桌面全息场景"><div class="shade"></div><div class="label"><b>Desktop Collection</b><span>IP DISPLAY</span></div></article>
+    <article class="card"><img src="MEDIA/P02/naruto_card_01.jpg" alt="火影忍者卡片互动体验一"><div class="shade"></div><div class="label"><b>Card Trigger</b><span>INTERACTIVE / 01</span></div></article>
+    <article class="card"><img src="MEDIA/P02/naruto_card_02.jpg" alt="火影忍者卡片互动体验二"><div class="shade"></div><div class="label"><b>Character Card</b><span>INTERACTIVE / 02</span></div></article>
+    <article class="card"><img src="MEDIA/P02/naruto_setup.jpg" alt="火影忍者全息设备布置"><div class="shade"></div><div class="label"><b>Desk Setup</b><span>SCENE / PROCESS</span></div></article>
+  </div></div>
+</section>
+
+<section class="chapter sandbox-work" id="sandbox">
+  <div class="copy reveal">
+    <div class="kicker">04 / PAST WORK — THE SANDBOX × XOLOme</div><h2>PORTAL<br>TO THE<br>VIRTUAL.</h2>
+    <div class="value">在上海浦东线下场景中，把虚拟角色“带到现实”：全息设备、合影互动与现场展示共同构成入口。</div>
+    <div class="desc">资料中包含浦东官方媒体报道、虚拟角色全息合影、开幕现场，以及 The Sandbox 定制设备展示。</div>
+    <div class="pills"><span class="pill">THE SANDBOX</span><span class="pill">SHANGHAI PUDONG</span><span class="pill">HOLOGRAM BOOTH</span><span class="pill">VIRTUAL CHARACTER</span></div>
+  </div>
+  <div class="media"><div class="gallery">
+    <article class="card device portrait-card"><img src="MEDIA/P03/sandbox_device.jpg" alt="The Sandbox XOLOme定制全息设备"><div class="label"><b>The Sandbox × XOLOme</b><span>CUSTOM HOLOGRAM DEVICE</span></div></article>
+    <article class="card"><img src="MEDIA/P03/sandbox_booth.jpg" alt="与虚拟角色进行全息合影"><div class="shade"></div><div class="label"><b>Hologram Booth Photo</b><span>VIRTUAL CHARACTER</span></div></article>
+    <article class="card"><img src="MEDIA/P03/sandbox_opening.jpg" alt="The Sandbox全息项目开幕现场"><div class="shade"></div><div class="label"><b>Opening Ceremony</b><span>ON-SITE</span></div></article>
+    <article class="card"><img src="MEDIA/P03/sandbox_venue.jpg" alt="The Sandbox项目线下现场"><div class="shade"></div><div class="label"><b>Shanghai Pudong</b><span>EXHIBITION SPACE</span></div></article>
+    <article class="card portrait-card"><img src="MEDIA/P03/sandbox_device_close.jpg" alt="The Sandbox定制设备近景"><div class="shade"></div><div class="label"><b>Portal Device</b><span>DETAIL</span></div></article>
+    <article class="card"><img src="MEDIA/P03/sandbox_media.jpg" alt="上海浦东官方媒体报道画面"><div class="shade"></div><div class="label"><b>Official Media Coverage</b><span>PUDONG / SHANGHAI</span></div></article>
+  </div></div>
+</section>
+
+<section class="collabs" id="collabs">
+  <div class="reveal">
+    <div class="kicker">05 / IP + BRAND COLLABORATIONS</div>
+    <h2>WORKED<br>WITH.</h2>
+    <div class="lead">不只是客户，许多时刻更多是交流，资源置换共赢合作。</div>
+    <div class="desc">当前先以文字品牌墙呈现；待确认公开权限后，再替换为正式 Logo 与项目主视觉。</div>
+    <div class="pills"><span class="pill">BRAND × IP</span><span class="pill">HOLOGRAM CONTENT</span><span class="pill">INTERACTIVE</span><span class="pill">VISUAL APPLICATION</span></div>
+  </div>
+  <div class="collab-board reveal">
+    <div class="collab-item"><span class="collab-no">01</span><div class="collab-name">麦当劳<small>MCDONALD'S</small></div><span class="collab-type">HOLOGRAM</span></div>
+    <div class="collab-item"><span class="collab-no">02</span><div class="collab-name">泰迪熊<small>TEDDY BEAR</small></div><span class="collab-type">BRAND IP</span></div>
+    <div class="collab-item"><span class="collab-no">03</span><div class="collab-name">Dyson<small>DYSON × AYAYI</small></div><span class="collab-type">BRAND IP</span></div>
+    <div class="collab-item"><span class="collab-no">04</span><div class="collab-name">开心宇宙<small>HAPPY UNIVERSE</small></div><span class="collab-type">BRAND IP</span></div>
+    <div class="collab-item"><span class="collab-no">05</span><div class="collab-name">可口可乐<small>COCA-COLA</small></div><span class="collab-type">HOLOGRAM</span></div>
+    <div class="collab-item"><span class="collab-no">06</span><div class="collab-name">长安卫<small>CHANG'AN GUARD</small></div><span class="collab-type">HOLOGRAM</span></div>
+    <div class="collab-item"><span class="collab-no">07</span><div class="collab-name">The Sandbox<small>VIRTUAL WORLD / IP</small></div><span class="collab-type">HOLOGRAM</span></div>
+    <div class="collab-item"><span class="collab-no">08</span><div class="collab-name">猪猪侠<small>GG BOND</small></div><span class="collab-type">HOLOGRAM</span></div>
+    <div class="collab-item"><span class="collab-no">09</span><div class="collab-name">超时空辉夜姬<small>IP COLLABORATION</small></div><span class="collab-type">HOLOGRAM</span></div>
+    <div class="collab-item"><span class="collab-no">10</span><div class="collab-name">民族娃娃<small>IP COLLABORATION</small></div><span class="collab-type">HOLOGRAM</span></div>
+    <div class="collab-item"><span class="collab-no">11</span><div class="collab-name">火影忍者<small>NARUTO</small></div><span class="collab-type">HOLOGRAM</span></div>
+    <div class="collab-item"><span class="collab-no">12</span><div class="collab-name">模寿<small>IP COLLABORATION</small></div><span class="collab-type">HOLOGRAM</span></div>
+    <div class="collab-foot">SELECTED COLLABORATIONS / 具体 Logo、项目素材与公开顺序以最终可披露范围为准。</div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="reveal"><div class="kicker">06 / CREATIVE EVOLUTION — 2016 → 2026</div><h2>NOT A<br>RÉSUMÉ.</h2></div>
+  <div class="story-board reveal">
+    <div class="story-flow">
+      <article class="story-node"><small>PHASE 02</small><b>BRAND × IP</b><p>角色从自有创作延伸到品牌内容赋能，让品牌拥有更生动的叙事入口和可传播的视觉人格。</p></article>
+      <article class="story-node"><small>PHASE 03</small><b>HOLOGRAM</b><p>把二维内容变成现场体验：全息、互动和空间装置，让角色真正进入现实场景。</p></article>
+      <article class="story-node"><small>PHASE 04</small><b>PRODUCT</b><p>内容结合软件与硬件，创造成为新入口的载体。</p></article>
+      <article class="story-node"><div><small>2026 / NEXT</small><b>NEW IPS KEEP EXPANDING</b><p>龙宝星球、超级舌阿蜥、格纳库杂兵团与 TJ 音乐共同构成新的AI时代阶段：</p></div><span class="story-tag">角色 → 品牌 → 互动 → 产品 → 内容宇宙</span></article>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="chapter product" id="product">
+  <div class="copy reveal">
+    <div class="kicker">07 / PRODUCT — HOLOGRAM</div><div class="xolo-logo-lockup" aria-label="XOLOme" hidden><img src="assets/xolome_logo_dark.png" alt="XOLOme"></div>
+    <div class="value">从“制作全息内容”继续往前，把能力变成真正可以使用的 C 端产品。</div>
+    <div class="pills"><span class="pill live">PREPARING FOR LAUNCH</span><span class="pill">AI × HOLOGRAM</span></div>
+  </div>
+  <div class="media"><div class="gallery">
+    <article class="card video-card">
+      <video class="video-preview" src="MEDIA/P04/1.mp4" muted loop playsinline preload="metadata" aria-label="点击放大全屏播放"></video>
+      <div class="shade"></div><div class="label"><b>01</b><span>PRODUCT FILM</span></div>
+    </article>
+    <article class="card">
+      <img src="MEDIA/P04/2.png" alt="XOLOme 02" loading="lazy">
+      <div class="shade"></div><div class="label"><b>02</b><span>XOLOme</span></div>
+    </article>
+    <article class="card">
+      <img src="MEDIA/P04/3.png" alt="XOLOme 03" loading="lazy">
+      <div class="shade"></div><div class="label"><b>03</b><span>XOLOme</span></div>
+    </article>
+    <article class="card">
+      <img src="MEDIA/P04/4.png" alt="XOLOme 04" loading="lazy">
+      <div class="shade"></div><div class="label"><b>04</b><span>XOLOme</span></div>
+    </article>
+    <article class="card">
+      <img src="MEDIA/P04/5.png" alt="XOLOme 05" loading="lazy">
+      <div class="shade"></div><div class="label"><b>05</b><span>XOLOme</span></div>
+    </article>
+    <article class="card">
+      <img src="MEDIA/P04/6.png" alt="XOLOme 06" loading="lazy">
+      <div class="shade"></div><div class="label"><b>06</b><span>XOLOme</span></div>
+    </article>
+    <article class="card">
+      <img src="MEDIA/P04/7.png" alt="XOLOme 07" loading="lazy">
+      <div class="shade"></div><div class="label"><b>07</b><span>XOLOme</span></div>
+    </article>
+    <article class="card">
+      <img src="MEDIA/P04/8.jpg" alt="XOLOme 08" loading="lazy">
+      <div class="shade"></div><div class="label"><b>08</b><span>XOLOme</span></div>
+    </article>
+    <article class="card">
+      <img src="MEDIA/P04/9.gif" alt="XOLOme 09 全息相册" loading="lazy">
+      <div class="shade"></div><div class="label"><b>09</b><span>HOLOGRAM ALBUM</span></div>
+    </article>
+  </div></div>
+</section>
+
+<section class="chapter xolo-ip" id="xolo-ip">
+  <div class="copy reveal">
+    <div class="kicker">07B / XOLOme IP — 筱7 / 7VII</div>
+    <h2>MEET<br>7VII.</h2>
+    <div class="value">XOLOme 的 IP 角色「筱7」：从角色设计手稿、世界观设定，3D 定稿，到绘本的完整视觉延展。</div>
+    <div class="desc">这一页按创作过程编排：先看角色造型与设定，再进入绘本章节。所有竖版绘本页与横版设定稿都保持原始比例，不统一裁切。</div>
+    <div class="pills"><span class="pill live">CHARACTER IP</span><span class="pill">SKETCH</span><span class="pill">3D DESIGN</span><span class="pill">PICTURE BOOK</span></div>
+  </div>
+  <div class="media"><div class="gallery">
+    <article><img src="MEDIA/P05/xolo_7vii_3d.jpg" alt="筱7 3D角色定稿"><div class="shade"></div><div class="label"><b>筱7 / 7vii</b><span>3D CHARACTER FINAL</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_character_sheet.jpeg" alt="筱7 XOLO Starbud 人物设定稿"><div class="shade"></div><div class="label"><b>Character Sheet</b><span>XOLO · STARBUD / DESIGN</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_sketch.jpg" alt="筱7人物设计手稿"><div class="shade"></div><div class="label"><b>Design Sketch</b><span>CHARACTER DEVELOPMENT</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_book_01.jpg" alt="筱7绘本 Hello, I’m 筱7"><div class="shade"></div><div class="label"><b>Hello, I’m 筱7</b><span>PROPOSAL B / PAGE 01</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_book_02.jpg" alt="筱7绘本 Welcome to Our Story"><div class="shade"></div><div class="label"><b>Welcome to Our Story</b><span>PROPOSAL B / PAGE 02</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_book_03.jpg" alt="筱7绘本 I Will Listen"><div class="shade"></div><div class="label"><b>I Will Listen</b><span>PROPOSAL B / PAGE 03</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_book_04.jpg" alt="筱7绘本 I Remember You"><div class="shade"></div><div class="label"><b>I Remember You</b><span>PROPOSAL B / PAGE 04</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_book_05.jpg" alt="筱7绘本 We Can Go Many Places"><div class="shade"></div><div class="label"><b>We Can Go Many Places</b><span>PROPOSAL B / PAGE 05</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_book_06.jpg" alt="筱7绘本 We Grow Together"><div class="shade"></div><div class="label"><b>We Grow Together</b><span>PROPOSAL B / PAGE 06</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_book_08.jpg" alt="筱7绘本 Silence Can Stay"><div class="shade"></div><div class="label"><b>Silence Can Stay</b><span>PROPOSAL B / PAGE 08</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_book_09.jpg" alt="筱7绘本 See the World With You"><div class="shade"></div><div class="label"><b>See the World With You</b><span>PROPOSAL B / PAGE 09</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_book_10.jpg" alt="筱7绘本 In Everyday Moments"><div class="shade"></div><div class="label"><b>In Everyday Moments</b><span>PROPOSAL B / PAGE 10</span></div></article>
+    <article><img src="MEDIA/P05/xolo_7vii_book_11.jpg" alt="筱7绘本 Thank You for Meeting Me"><div class="shade"></div><div class="label"><b>Thank You for Meeting Me</b><span>PROPOSAL B / PAGE 11</span></div></article>
+  </div></div>
+</section>
+
+<section class="chapter dragon-planet" id="dragon">
+  <div class="copy reveal">
+    <div class="kicker">08 / ORIGINAL IP — DRAGON PLANET</div><h2>DRAGON<br>PLANET.</h2>
+    <div class="value">龙宝 / DRAGON PLANET / 龙宝星球</div>
+    <div class="desc">一个小恐龙来地球探险的故事<br>有故事小说版号，喜马拉雅有声书，授权服装，亲子空间等落地经验。</div>
+    <div class="pills"><span class="pill live">ORIGINAL IP</span><span class="pill">WORLD</span><span class="pill">ILLUSTRATION</span><span class="pill">PUBLISHING</span><span class="pill">MOTION</span></div>
+    <div class="dragon-material-note">已合并原先重复的龙宝页面；当前这一屏即为龙宝完整入口。素材顺序按已上传内容整理为：Motion 01 → Motion 02 → Cover → World → Campus → Illustration &amp; Publishing。</div>
+  </div>
+  <div class="media"><div class="gallery">
+    <article class="card video-card">
+      <video class="video-preview" src="MEDIA/P06/dragon_motion_space.mp4" muted loop playsinline preload="metadata" aria-label="点击放大全屏播放"></video>
+      <div class="shade"></div><div class="label"><b>Motion 05</b><span>SPACE JOURNEY</span></div>
+    </article>
+    <article class="card video-card">
+      <video class="video-preview" src="MEDIA/P06/dragon_motion_nightmare.mp4" muted loop playsinline preload="metadata" aria-label="点击放大全屏播放"></video>
+      <div class="shade"></div><div class="label"><b>Motion 06</b><span>LOONBAO / NIGHTMARE</span></div>
+    </article>
+    <article class="card"><img src="MEDIA/P06/dragon_cover_party.jpg" alt="龙宝星球主视觉派对群像"><div class="shade"></div><div class="label"><b>Cover</b><span>MAIN VISUAL</span></div></article>
+    <article class="card"><img src="MEDIA/P06/dragon_world_city.jpg" alt="龙宝星球未来城市世界观"><div class="shade"></div><div class="label"><b>World</b><span>CITY / SETTING</span></div></article>
+    <article class="card"><img src="MEDIA/P06/dragon_kindergarten.jpg" alt="龙宝星球幼儿园与角色场景"><div class="shade"></div><div class="label"><b>Campus</b><span>CHARACTER SCENE</span></div></article>
+    <article class="card"><img src="MEDIA/P06/dragon_publishing_qr.jpg" alt="龙宝星球插图与出版信息"><div class="shade"></div><div class="label"><b>Illustration / Publishing</b><span>COMICS / AUDIOBOOK</span></div></article>
+  </div></div>
+</section>
+
+<!-- SUPER AXI: merged into one blue page -->
+<section class="axi-onepage" id="axi">
+  <div class="axi-head">
+    <div class="axi-copy reveal">
+      <div class="kicker">09 / NEW IP — WECHAT MINI GAME</div>
+      <h2>超级舌<br><span>阿蜥</span></h2>
+      <p>一个动作就是玩法：伸舌、黏住、松手、飞出去。城市、美食和角色收集都围绕这个核心循环展开。</p>
+      <div class="pills"><span class="pill live">准备上线</span><span class="pill">微信小游戏</span><span class="pill">一指操控</span></div>
+    </div>
+    <div class="axi-cover reveal"><img src="MEDIA/P07/superaxi_game_start.jpg" alt="超级舌阿蜥游戏主视觉"></div>
+  </div>
+  <div class="axi-gallery-wrap reveal">
+    <div class="axi-intro">
+      <div class="kicker">PLAY / CITY / CHARACTER</div>
+      <div class="value">一指按压玩法 + 名城美食 + 角色周边</div>
+      <div class="desc">桌面端可使用滚轮逐张切换，也可按住滑鼠左键拖动；点击视频可放大全屏播放。整体章节保持蓝色底，与当前项目视觉一致。</div>
+      <div class="pills"><span class="pill">GAMEPLAY</span><span class="pill">CITY</span><span class="pill">FOOD</span><span class="pill">CHARACTER</span></div>
+    </div>
+    <div class="media"><div class="gallery">
+      <article class="axi-phone"><img src="MEDIA/P07/superaxi_game_start.jpg" alt="超级舌阿蜥开始界面"><div class="label"><b>首页</b><span>GAME START</span></div></article>
+      <article class="axi-phone video-card"><video class="video-preview" src="MEDIA/P07/superaxi_portal_transition.mp4" muted loop playsinline preload="metadata" aria-label="点击放大全屏播放"></video><div class="shade"></div><div class="label"><b>穿越门</b><span>TRANSITION FILM</span></div></article>
+      <article class="axi-phone"><img src="MEDIA/P07/superaxi_shanghai.jpg" alt="上海玩法"><div class="label"><b>上海</b><span>GAMEPLAY</span></div></article>
+      <article class="axi-phone"><img src="MEDIA/P07/superaxi_mexico.jpg" alt="墨西哥玩法"><div class="label"><b>墨西哥</b><span>GAMEPLAY</span></div></article>
+      <article class="axi-poster"><img src="MEDIA/P07/superaxi_play_2.jpg" alt="超级舌阿蜥玩法海报"><div class="shade"></div><div class="label"><b>一指操控</b><span>KEY VISUAL</span></div></article>
+      <article class="axi-poster"><img src="MEDIA/P07/superaxi_merch.jpg" alt="阿蜥角色衍生视觉"><div class="shade"></div><div class="label"><b>角色延展</b><span>IP EXTENSION</span></div></article>
+      <article class="axi-poster"><img src="MEDIA/P07/superaxi_character_sheet.png" alt="阿蜥角色设定图"><div class="shade"></div><div class="label"><b>角色设定</b><span>CHARACTER SHEET</span></div></article>
+    </div></div>
+  </div>
+</section>
+
+<!-- GARAGE MILITIA ANIMATION / WORLD: separate project -->
+
+<section class="chapter gm-world" id="gm">
+  <div class="copy reveal">
+    <div class="kicker">10 / GARAGE MILITIA</div>
+    <h2>GARAGE<br>MILITIA.</h2>
+    <div class="value">格纳库杂兵团</div>
+    <div class="desc">大战之后，时空扭曲不断产生跨次元裂缝。格纳库里的维修小队一边处理荒诞的战后维修日常，一边维护裂缝；看似无厘头的生活背后，隐藏着大战真相，以及阿汤真正身份的谜团。</div>
+    <div class="gm-character-grid" aria-label="格纳库杂兵团人物介绍">
+      <div class="gm-character"><b>阿汤</b>电饭煲改造的失忆主角，天真又容易闯祸，真正身份是能源核心；</div>
+      <div class="gm-character"><b>大腕</b>美式肌肉车机器人，V6 脾气的力量担当；</div>
+      <div class="gm-character"><b>丘吉尔</b>沉默可靠的士官长兼维修大师，也是唯一知道真相的人；</div>
+      <div class="gm-character"><b>大金</b>自动售货机改造的宅男百科，负责 ACG 吐槽，也会卖套餐赚钱；</div>
+      <div class="gm-character"><b>爱丽丝</b>高配仿生人技术担当，毒舌但温柔，而且必须正常吃饭；</div>
+      <div class="gm-character"><b>箭箭</b>不会说话、什么都吃的狗型火箭团宠。</div>
+    </div>
+    <div class="pills">
+      <span class="pill">OP ANIMATION</span><span class="pill">WORLD BUILDING</span>
+      <span class="pill">POSTER SERIES</span><span class="pill">CHARACTERS</span>
+    </div>
+  </div>
+  <div class="media"><div class="gallery">
+    <article class="gm-card op-card video-card">
+      <video class="video-preview" src="MEDIA/P08/garage_op.mp4" muted loop playsinline preload="metadata" aria-label="点击放大全屏播放"></video>
+      <div class="shade"></div><div class="label"><b>OP / 动画片段</b><span>01 · VIDEO</span></div>
+    </article>
+    <article class="gm-card poster-card"><img src="MEDIA/P08/garage_group_keyvisual.jpg" alt="Garage Militia 群像主视觉"><div class="shade"></div><div class="label"><b>GARAGE MILITIA</b><span>02 · KEY VISUAL</span></div></article>
+    <article class="gm-card poster-card"><img src="MEDIA/P08/garage_jj.jpeg" alt="Garage Militia JJ 海报"><div class="shade"></div><div class="label"><b>JJ</b><span>03 · POSTER</span></div></article>
+    <article class="gm-card poster-card"><img src="MEDIA/P08/garage_dajin.jpeg" alt="Garage Militia 大金海报"><div class="shade"></div><div class="label"><b>大金</b><span>04 · POSTER</span></div></article>
+    <article class="gm-card poster-card"><img src="MEDIA/P08/garage_dawan.jpeg" alt="Garage Militia 大腕海报"><div class="shade"></div><div class="label"><b>大腕</b><span>05 · POSTER</span></div></article>
+    <article class="gm-card poster-card"><img src="MEDIA/P08/garage_churchill.jpeg" alt="Garage Militia 丘吉尔 Mk.VII 海报"><div class="shade"></div><div class="label"><b>丘吉尔 Mk.VII</b><span>06 · POSTER</span></div></article>
+    <article class="gm-card poster-card"><img src="MEDIA/P08/garage_atom.jpeg" alt="Garage Militia A-TOM 海报"><div class="shade"></div><div class="label"><b>A-TOM</b><span>07 · POSTER</span></div></article>
+  </div></div>
+</section>
+
+
+<!-- GARAGE MILITIA GAME: now laid out with gameplay + 3 ultimates -->
+
+<section class="chapter gm-game-gallery" id="gmgame">
+  <div class="copy reveal">
+    <div class="kicker">10B / GARAGE MILITIA</div>
+    <h2>THE<br>GAME.</h2>
+    <div class="value">提炼故事精华片段所组成的塔防类小游戏</div>
+    <div class="desc">右侧横向浏览：实机 Demo → Alice · Burn Slash → A-TOM · Tsunami Impact → 钢派波。视频滚到中央自动静音播放，移出中央停止；点击视频可进入全屏有声播放。</div>
+    <div class="pills">
+      <span class="pill live">制作中</span><span class="pill">DEMO</span>
+      <span class="pill">ALICE</span><span class="pill">A-TOM</span><span class="pill">钢派波</span>
+    </div>
+  </div>
+  <div class="media"><div class="gallery">
+    <article class="gm-card video-card">
+      <video class="video-preview" src="MEDIA/P09/gm_gameplay_demo.mp4" muted loop playsinline preload="metadata" aria-label="点击放大全屏播放"></video>
+      <div class="shade"></div><div class="label"><b>演示 Demo</b><span>GAMEPLAY</span></div>
+    </article>
+    <article class="gm-skill-card video-card">
+      <video class="video-preview" src="MEDIA/P09/gm_ultimate_alice_burnslash.mp4" muted loop playsinline preload="metadata" aria-label="点击放大全屏播放"></video>
+      <div class="shade"></div><div class="label"><b>Alice · Burn Slash</b><span>ULTIMATE 01</span></div>
+    </article>
+    <article class="gm-skill-card video-card">
+      <video class="video-preview" src="MEDIA/P09/gm_ultimate_atom_tsunami.mp4" muted loop playsinline preload="metadata" aria-label="点击放大全屏播放"></video>
+      <div class="shade"></div><div class="label"><b>A-TOM · Tsunami Impact</b><span>ULTIMATE 02</span></div>
+    </article>
+    <article class="gm-skill-card video-card">
+      <video class="video-preview" src="MEDIA/P09/gm_ultimate_steelwave.mp4" muted loop autoplay playsinline preload="auto" aria-label="点击放大全屏播放"></video>
+      <div class="shade"></div><div class="label"><b>钢派波</b><span>ULTIMATE 03</span></div>
+    </article>
+  </div></div>
+</section>
+
+
+<section class="tj-profile" id="tj-profile">
+  <div class="tj-profile-photo reveal">
+    <div class="tj-slideshow" aria-label="TJ 林彤婕照片轮播">
+      <img class="tj-slide-image active" src="MEDIA/TJ_PROFILE/tj_slide_01_rain.png" alt="TJ 林彤婕雨夜撑伞肖像">
+      <img class="tj-slide-image" src="MEDIA/TJ_PROFILE/tj_slide_02_red_bass.png" alt="TJ 林彤婕红色耳机与贝斯室内肖像">
+      <img class="tj-slide-image" src="MEDIA/TJ_PROFILE/tj_slide_03_live.jpg" alt="TJ 林彤婕现场演唱近景">
+    </div>
+    <div class="mark"><b>TJ</b><span>LIN TONGJIE / 林彤婕 / 头姐</span></div>
+  </div>
+  <div class="tj-profile-info reveal">
+    <div class="kicker">11A / ARTIST PROFILE — LIN TONGJIE</div>
+    <h2>林彤婕<span>TJ / 头姐</span></h2>
+    <div class="tj-profile-bio">阳光、率性、独立。以摇滚为主要音乐方向，同时能驾驭甜美情歌与抒情作品。</div>
+    <div class="tj-facts">
+      <div class="tj-fact"><b>出生日期</b><span>2008.10.28</span></div><div class="tj-fact"><b>身高</b><span>168 cm</span></div>
+      <div class="tj-fact"><b>地区</b><span>台湾</span></div><div class="tj-fact"><b>星座</b><span>天蝎座</span></div>
+      <div class="tj-fact"><b>主要曲风</b><span>Rock / 摇滚</span></div><div class="tj-fact"><b>兼容曲风</b><span>甜美情歌 / 抒情</span></div>
+      <div class="tj-fact"><b>核心能力</b><span>唱功极佳 / 曲风适应力强</span></div><div class="tj-fact"><b>昵称由来</b><span>喜欢吃芋头</span></div>
+    </div>
+    <div class="tj-profile-position">
+      <div class="tj-position-row"><b>MAIN</b>Rock / 摇滚</div><div class="tj-position-row"><b>VOCAL</b>爆发力、情绪张力、整体表现</div>
+      <div class="tj-position-row"><b>RANGE</b>甜美情歌、抒情作品</div><div class="tj-position-row"><b>STAGE</b>明亮、俐落、有力量感</div>
+    </div>
+    <div class="tj-keywords"><span>BRIGHT</span><span>INDEPENDENT</span><span>ATHLETIC</span><span>ROCK</span><span>SOFT CONTRAST</span></div>
+  </div>
+  <div class="tj-album reveal">
+    <div class="tj-album-head"><small>DEBUT ALBUM / TENTATIVE TRACKLIST</small><h3>首张专辑<br>歌单</h3><p>11 TRACKS · 暂定</p></div>
+    <div class="tj-tracklist">
+      <div class="tj-track">莱特</div><div class="tj-track">Friends (I'll be here!!)</div>
+      <div class="tj-track">我还在路上</div><div class="tj-track">别怕慢慢走</div>
+      <div class="tj-track">霓虹侦探</div><div class="tj-track">松开手</div>
+      <div class="tj-track">Life goes on</div><div class="tj-track">跟我跟我走</div>
+      <div class="tj-track">MONSTER</div><div class="tj-track">WANNA LOVE 我想去爱</div>
+      <div class="tj-track">午夜的沙滩</div>
+    </div>
+    <div class="tj-album-foot"><b>ARTIST DIRECTION</b><br>Rock / Vocal / Emotional Range / Stage Presence</div>
+  </div>
+</section>
+
+<section class="tj-show" id="tj">
+  <div class="tj-copy">
+    <div class="reveal">
+      <div class="kicker">11B / MUSIC IP — TJ / LIN TONGJIE</div>
+      <h2>TJ<br><span>林彤婕</span></h2>
+      <div class="tj-lead">预计年底发行11首歌+两只MV</div>
+      <div class="pills">
+        <span class="pill live">MUSIC PROJECT</span>
+        <span class="pill">ROCK / VOCAL</span>
+        <span class="pill">NEON DETECTIVE</span>
+      </div>
+    </div>
+
+    <div class="tj-player reveal">
+      <div class="tj-meta"><span class="tj-pulse"></span>NOW PLAYING · <span id="tjNowPlaying">霓虹侦探</span> <span class="tj-track-no" id="tjTrackNo">01 / 03</span></div>
+      <div class="tj-controls">
+        <button class="tj-prev" id="tjPrev" type="button" aria-label="上一首">‹</button>
+        <button class="tj-play" id="tjPlay" type="button">PLAY / 播放</button>
+        <button class="tj-next" id="tjNext" type="button" aria-label="下一首">›</button>
+        <button class="tj-mute" id="tjMute" type="button" aria-label="静音">♪</button>
+        <input class="tj-volume" id="tjVolume" type="range" min="0" max="1" step="0.01" value="0.85" aria-label="音量">
+        <span class="tj-time" id="tjTime">00:00 / 02:00</span>
+      </div>
+      <div class="tj-progress" id="tjProgress"><span id="tjProgressBar"></span></div>
+      <audio id="tjAudio" preload="metadata"></audio>
+    </div>
+  </div>
+
+  <div class="tj-stage reveal" id="tjStage">
+    <div class="tj-count" id="tjCount">01 / 11</div>
+
+    <figure class="tj-slide active" data-caption="TJ / 林彤婕 · NIGHT PORTRAIT">
+      <img src="MEDIA/P10/tj_new_01_night_portrait.jpg" alt="TJ 林彤婕 夜景肖像">
+    </figure>
+    <figure class="tj-slide" data-caption="TJ / 林彤婕 · BLACK LOOK / INTERIOR">
+      <img src="MEDIA/P10/tj_new_02_interior.jpg" alt="TJ 林彤婕 黑色造型室内视觉">
+    </figure>
+    <figure class="tj-slide" data-caption="TJ / 林彤婕 · BLACK LOOK / NIGHT">
+      <img src="MEDIA/P10/tj_new_03_night_arrival.jpg" alt="TJ 林彤婕 夜景全身视觉">
+    </figure>
+    <figure class="tj-slide" data-caption="TJ / 林彤婕 · LAB / STORY FRAME">
+      <img src="MEDIA/P10/tj_new_04_lab.jpg" alt="TJ 林彤婕 科技实验室场景">
+    </figure>
+    <figure class="tj-slide" data-caption="TJ / 林彤婕 · LIVE / CLOSE CONTACT">
+      <video class="tj-inline-video" src="MEDIA/P10/tj_new_05_live.mp4" muted playsinline preload="metadata" aria-label="TJ 现场片段，点击放大全屏播放"></video>
+      <div class="tj-video-note">VIDEO · CLICK TO OPEN</div>
+    </figure>
+
+    <figure class="tj-slide" data-caption="TJ / 林彤婕 · BASS / STUDIO">
+      <img src="MEDIA/P10/tj_01.jpg" alt="TJ 林彤婕 贝斯造型">
+    </figure>
+    <figure class="tj-slide" data-caption="TJ / 林彤婕 · PORTRAIT / BASS">
+      <img src="MEDIA/P10/tj_02.jpg" alt="TJ 林彤婕 贝斯棚拍">
+    </figure>
+    <figure class="tj-slide" data-caption="LIVE / STAGE · PERFORMANCE">
+      <img src="MEDIA/P10/tj_03.jpg" alt="TJ 林彤婕 舞台全身演出">
+    </figure>
+    <figure class="tj-slide" data-caption="LIVE / STAGE · CLOSE UP">
+      <img src="MEDIA/P10/tj_04.jpg" alt="TJ 林彤婕 舞台近景">
+    </figure>
+    <figure class="tj-slide" data-caption="霓虹侦探 · NEON DETECTIVE">
+      <img src="MEDIA/P10/tj_neon_detective.jpg" alt="霓虹侦探视觉">
+    </figure>
+    <figure class="tj-slide" data-caption="TJ / LIN TONGJIE · GUITAR / ROOM">
+      <img src="MEDIA/P10/tj_06.jpg" alt="TJ 林彤婕 吉他室内造型">
+    </figure>
+
+    <div class="tj-caption" id="tjCaption">TJ / 林彤婕 · NIGHT PORTRAIT</div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div><div class="kicker reveal">12 / CONTACT</div><div class="mega reveal">BUILD THE<br><span>NEXT IP.</span></div></div>
+  <footer><div>王盛业 / ABiNGO<br>缤谷王 · 滨谷王</div><div>IP CREATION / BRAND × IP / HOLOGRAM / GAME / ANIMATION / MUSIC</div><div>CONTACT INFO → TO BE ADDED</div></footer>
+  <a class="home-btn" href="#top">↑ 回到首页</a>
+</section>
+
+
+<script src="media_manifest.js"></script>
+<div class="video-modal" id="videoModal" aria-hidden="true">
+  <button class="video-close" id="videoClose" type="button" aria-label="退出全屏播放">×</button>
+  <video id="videoModalPlayer" controls playsinline preload="metadata"></video>
+  <div class="video-modal-note">ESC / × TO CLOSE · VOLUME / MUTE IN PLAYER CONTROLS</div>
+</div>
+
+<script>
+/* MEDIA AUTO LOADER -------------------------------------------------
+   In live mode, media_server.py scans MEDIA folders when the manifest is rebuilt.
+   In static mode, UPDATE_MEDIA regenerates media_manifest.js.
+   Drop JPG/PNG/WEBP/GIF/AVIF/MP4/WEBM/MOV/M4V into MEDIA/P01...P10. Run START.bat and refresh the page after changes.
+   Prefix filenames with 01_, 02_, 03_... to control order. */
+(function hydratePageMedia(){
+  const manifest=window.PAGE_MEDIA_MANIFEST||{};
+  const pageFiles=name=>Array.isArray(manifest[name])?manifest[name]:[];
+
+  function cardFor(item){
+    const article=document.createElement('article');
+    article.className=(item.className||'').trim() || 'card';
+    if(item.type==='video'&&!article.classList.contains('video-card'))article.classList.add('video-card');
+    let media;
+    if(item.type==='video'){
+      media=document.createElement('video');
+      media.className='video-preview';
+      media.muted=true;media.loop=true;media.playsInline=true;media.preload='metadata';
+      media.setAttribute('aria-label','点击放大全屏播放');
+    }else{
+      media=document.createElement('img');
+      media.loading='lazy';
+      media.alt=item.title||item.name||'media';
+    }
+    media.src=item.src;
+    article.appendChild(media);
+    const shade=document.createElement('div');shade.className='shade';article.appendChild(shade);
+    const label=document.createElement('div');label.className='label';
+    const b=document.createElement('b');b.textContent=item.title||item.name||'MEDIA';
+    const span=document.createElement('span');span.textContent=item.subtitle||(item.type==='video'?'VIDEO':'IMAGE');
+    label.append(b,span);article.appendChild(label);
+    return article;
+  }
+
+  function rebuildGallery(selector,folder){
+    const gallery=document.querySelector(selector);
+    let files=pageFiles(folder).filter(i=>i.type==='image'||i.type==='video');
+    // XOLOme PRODUCT: the product film is always the first card, followed by images.
+    if(folder==='P04'){
+      files=[...files].sort((a,b)=>{
+        const av=a.type==='video'?0:1, bv=b.type==='video'?0:1;
+        return av-bv;
+      });
+    }
+    if(!gallery||!files.length)return;
+    const statics=[...gallery.children].filter(el=>el.matches('[data-static-card]'));
+    [...gallery.children].filter(el=>el.tagName==='ARTICLE'&&!el.matches('[data-static-card]')).forEach(el=>el.remove());
+    files.forEach(item=>gallery.appendChild(cardFor(item)));
+    statics.forEach(el=>gallery.appendChild(el));
+  }
+
+  rebuildGallery('#past .gallery','P01');
+  rebuildGallery('#naruto .gallery','P02');
+  rebuildGallery('#sandbox .gallery','P03');
+  rebuildGallery('#product .gallery','P04');
+  rebuildGallery('#xolo-ip .gallery','P05');
+  rebuildGallery('#dragon .gallery','P06');
+  rebuildGallery('#axi .gallery','P07');
+  rebuildGallery('#gm .gallery','P08');
+  rebuildGallery('#gmgame .gallery','P09');
+
+  // TJ uses a custom slideshow rather than the generic Gallery.
+  const tjFiles=pageFiles('P10').filter(i=>i.type==='image'||i.type==='video');
+  const stage=document.getElementById('tjStage');
+  if(stage&&tjFiles.length){
+    stage.querySelectorAll('.tj-slide').forEach(el=>el.remove());
+    const captionEl=stage.querySelector('.tj-caption');
+    tjFiles.forEach((item,index)=>{
+      const fig=document.createElement('figure');
+      fig.className='tj-slide'+(index===0?' active':'');
+      fig.dataset.caption=item.caption||item.title||item.name||'TJ';
+      if(item.type==='video'){
+        const video=document.createElement('video');
+        video.className='tj-inline-video';video.src=item.src;video.muted=true;video.playsInline=true;video.preload='metadata';
+        video.setAttribute('aria-label','TJ 视频，点击放大全屏播放');fig.appendChild(video);
+        const note=document.createElement('div');note.className='tj-video-note';note.textContent='VIDEO · CLICK TO OPEN';fig.appendChild(note);
+      }else{
+        const img=document.createElement('img');img.src=item.src;img.alt=item.title||item.name||'TJ';img.loading='lazy';fig.appendChild(img);
+      }
+      stage.insertBefore(fig,captionEl||null);
+    });
+    const count=document.getElementById('tjCount');if(count)count.textContent='01 / '+String(tjFiles.length).padStart(2,'0');
+    if(captionEl)captionEl.textContent=tjFiles[0].caption||tjFiles[0].title||tjFiles[0].name||'TJ';
+  }
+})();
+const nav=document.getElementById('topnav');addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30),{passive:true});
+const reveals=document.querySelectorAll('.reveal');const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.14});reveals.forEach(el=>ro.observe(el));
+const rail=[...document.querySelectorAll('.yearrail a')];const sections=[...document.querySelectorAll('section[id]')];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)rail.forEach(a=>a.classList.toggle('active',a.dataset.id===e.target.id))}),{rootMargin:'-35% 0px -55% 0px'});sections.forEach(s=>so.observe(s));
+// v17: make every image/video gallery card fit its native ratio at one common height.
+function prepareAdaptiveMediaCards(){
+  document.querySelectorAll('.gallery>article').forEach(card=>{
+    const media=card.querySelector(':scope > img, :scope > video');
+    if(!media)return;
+    card.classList.add('auto-media-card');
+    const apply=()=>{
+      const w=media.tagName==='VIDEO'?media.videoWidth:media.naturalWidth;
+      const h=media.tagName==='VIDEO'?media.videoHeight:media.naturalHeight;
+      if(w>0&&h>0)card.style.setProperty('--media-ratio',`${w} / ${h}`);
+    };
+    apply();
+    media.addEventListener(media.tagName==='VIDEO'?'loadedmetadata':'load',apply,{once:false});
+  });
+}
+prepareAdaptiveMediaCards();
+
+document.querySelectorAll('.gallery').forEach(g=>{
+  let items=[...g.children].filter(el=>el.tagName==='ARTICLE');
+  if(!items.length)return;
+
+  const media=g.closest('.media');
+  const counter=document.createElement('div');
+  counter.className='gallery-counter';
+  media?.appendChild(counter);
+
+  let current=0;
+  let dragging=false;
+  let startX=0;
+  let startLeft=0;
+  let wheelLocked=false;
+  let scrollTimer=null;
+
+  function updateCounter(){
+    counter.textContent=String(current+1).padStart(2,'0')+' / '+String(items.length).padStart(2,'0');
+  }
+
+  function nearestIndex(){
+    const viewportCenter=g.scrollLeft+g.clientWidth/2;
+    let best=0, bestDistance=Infinity;
+    items.forEach((el,i)=>{
+      const center=el.offsetLeft+el.offsetWidth/2;
+      const d=Math.abs(center-viewportCenter);
+      if(d<bestDistance){bestDistance=d;best=i;}
+    });
+    current=best;
+    updateCounter();
+  }
+
+  function goTo(index){
+    current=Math.max(0,Math.min(items.length-1,index));
+    items[current].scrollIntoView({
+      behavior:'smooth',
+      block:'nearest',
+      inline:'center'
+    });
+    updateCounter();
+  }
+
+  updateCounter();
+  g.addEventListener('devreorder',()=>{items=[...g.children].filter(el=>el.tagName==='ARTICLE');nearestIndex();});
+
+  g.addEventListener('wheel',e=>{
+    // Vertical wheel controls this horizontal gallery one image at a time.
+    if(Math.abs(e.deltaY)<Math.abs(e.deltaX))return;
+
+    nearestIndex();
+    const next=e.deltaY>0;
+    const prev=e.deltaY<0;
+    const canNext=next && current<items.length-1;
+    const canPrev=prev && current>0;
+
+    if(canNext || canPrev){
+      e.preventDefault();
+
+      // One physical wheel gesture = one image change.
+      if(wheelLocked)return;
+      wheelLocked=true;
+      goTo(current+(canNext?1:-1));
+      setTimeout(()=>{wheelLocked=false;},420);
+    }
+    // When already on the first/last item we intentionally do not
+    // preventDefault, so the page continues its normal vertical scroll.
+  },{passive:false});
+
+  // Left mouse button / pointer drag.
+  g.addEventListener('pointerdown',e=>{
+    if(document.body.classList.contains('dev-mode'))return;
+    if(e.pointerType==='mouse' && e.button!==0)return;
+    dragging=true;
+    startX=e.clientX;
+    startLeft=g.scrollLeft;
+    g.setPointerCapture(e.pointerId);
+  });
+
+  g.addEventListener('pointermove',e=>{
+    if(!dragging)return;
+    g.scrollLeft=startLeft-(e.clientX-startX)*1.15;
+  });
+
+  ['pointerup','pointercancel','pointerleave'].forEach(type=>{
+    g.addEventListener(type,()=>{
+      if(!dragging)return;
+      dragging=false;
+      setTimeout(nearestIndex,90);
+    });
+  });
+
+  g.addEventListener('scroll',()=>{
+    clearTimeout(scrollTimer);
+    scrollTimer=setTimeout(nearestIndex,100);
+  },{passive:true});
+});
+
+
+const videoModal=document.getElementById('videoModal');
+const videoClose=document.getElementById('videoClose');
+const videoModalPlayer=document.getElementById('videoModalPlayer');
+const videoPreviews=[...document.querySelectorAll('.video-preview')];
+
+let modalSourcePreview=null;
+let modalWasTjPlaying=false;
+let previewUpdateRAF=0;
+
+function visibleRatio(rect){
+  const vw=window.innerWidth;
+  const vh=window.innerHeight;
+  const w=Math.max(0,Math.min(rect.right,vw)-Math.max(rect.left,0));
+  const h=Math.max(0,Math.min(rect.bottom,vh)-Math.max(rect.top,0));
+  if(rect.width<=0 || rect.height<=0)return 0;
+  return (w*h)/(rect.width*rect.height);
+}
+
+function previewScore(video){
+  const r=video.getBoundingClientRect();
+  const ratio=visibleRatio(r);
+  if(ratio<0.18)return Infinity;
+
+  const cy=(r.top+r.bottom)/2;
+  const verticalDistance=Math.abs(cy-window.innerHeight/2)/(window.innerHeight/2);
+
+  // For videos inside a horizontal Gallery, measure horizontal centering
+  // against that Gallery viewport, not against the whole browser window.
+  const gallery=video.closest('.gallery');
+  let horizontalDistance=0;
+  if(gallery){
+    const gr=gallery.getBoundingClientRect();
+    const targetX=(gr.left+gr.right)/2;
+    const cx=(r.left+r.right)/2;
+    horizontalDistance=Math.abs(cx-targetX)/Math.max(1,gr.width/2);
+  }
+
+  // Loosened "near the visible center" requirement: any video that's
+  // substantially in the viewport should auto-play.
+  if(verticalDistance>1.6 || horizontalDistance>1.5)return Infinity;
+
+  return verticalDistance*0.75 + horizontalDistance*1.15 - ratio*0.25;
+}
+
+function galleryViewportRatio(video){
+  const gallery=video.closest('.gallery');
+  if(!gallery)return 0;
+  const r=video.getBoundingClientRect();
+  const gr=gallery.getBoundingClientRect();
+  const vw=window.innerWidth, vh=window.innerHeight;
+  const left=Math.max(r.left,gr.left,0);
+  const right=Math.min(r.right,gr.right,vw);
+  const top=Math.max(r.top,gr.top,0);
+  const bottom=Math.min(r.bottom,gr.bottom,vh);
+  const visibleW=Math.max(0,right-left);
+  const visibleH=Math.max(0,bottom-top);
+  if(r.width<=0||r.height<=0)return 0;
+  return (visibleW*visibleH)/(r.width*r.height);
+}
+
+function playMutedLoop(video){
+  video.muted=true;
+  video.loop=true;
+  video.playsInline=true;
+  video.setAttribute('muted','');
+  video.setAttribute('loop','');
+  video.setAttribute('playsinline','');
+  video.classList.add('is-active-preview');
+  const p=video.play();
+  if(p && typeof p.catch==='function')p.catch(()=>{});
+}
+
+function updateCenteredVideoPreview(){
+  previewUpdateRAF=0;
+
+  // Fullscreen player takes priority.
+  if(videoModal && videoModal.classList.contains('open')){
+    videoPreviews.forEach(v=>{
+      v.pause();
+      v.classList.remove('is-active-preview');
+    });
+    return;
+  }
+
+  // Garage Militia / THE GAME uses multiple short skill loops. Any card that is
+  // substantially visible should play, so the right-most 钢派波 clip also loops
+  // automatically instead of being paused while another card owns the center.
+  const gmGameVideos=videoPreviews.filter(v=>v.closest('#gmgame'));
+  const normalVideos=videoPreviews.filter(v=>!v.closest('#gmgame'));
+
+  gmGameVideos.forEach(v=>{
+    if(galleryViewportRatio(v)>=0.52){
+      playMutedLoop(v);
+    }else{
+      v.pause();
+      v.classList.remove('is-active-preview');
+    }
+  });
+
+  // Other sections keep the quieter single-centered-preview behavior.
+  let best=null;
+  let bestScore=Infinity;
+  normalVideos.forEach(v=>{
+    const s=previewScore(v);
+    if(s<bestScore){bestScore=s;best=v;}
+  });
+  normalVideos.forEach(v=>{
+    if(v===best && Number.isFinite(bestScore)){
+      playMutedLoop(v);
+    }else{
+      v.pause();
+      v.classList.remove('is-active-preview');
+    }
+  });
+}
+
+// Extra safety for short clips: if a browser fires `ended` despite the loop
+// attribute, immediately restart while the preview is still active/visible.
+videoPreviews.forEach(v=>{
+  v.addEventListener('ended',()=>{
+    if(v.classList.contains('is-active-preview')){
+      try{v.currentTime=0;}catch(e){}
+      playMutedLoop(v);
+    }
+  });
+});
+
+function schedulePreviewUpdate(){
+  if(previewUpdateRAF)return;
+  previewUpdateRAF=requestAnimationFrame(updateCenteredVideoPreview);
+}
+
+function openVideoModal(preview){
+  if(!videoModal || !videoModalPlayer)return;
+
+  const src=preview.currentSrc || preview.getAttribute('src');
+  if(!src)return;
+
+  modalSourcePreview=preview;
+  videoPreviews.forEach(v=>v.pause());
+
+  // Avoid two audible sources at once.
+  if(typeof tjAudio!=='undefined' && tjAudio){
+    modalWasTjPlaying=!tjAudio.paused;
+    if(modalWasTjPlaying)tjAudio.pause();
+  }
+
+  videoModalPlayer.src=src;
+  videoModalPlayer.muted=false;
+  videoModalPlayer.volume=1;
+  videoModal.classList.add('open');
+  videoModal.setAttribute('aria-hidden','false');
+  document.body.classList.add('video-open');
+
+  const wantedTime=Number.isFinite(preview.currentTime)?preview.currentTime:0;
+  const startPlayback=()=>{
+    try{
+      if(Number.isFinite(wantedTime))videoModalPlayer.currentTime=wantedTime;
+    }catch(e){}
+    const p=videoModalPlayer.play();
+    if(p && typeof p.catch==='function')p.catch(()=>{});
+  };
+
+  if(videoModalPlayer.readyState>=1){
+    startPlayback();
+  }else{
+    videoModalPlayer.addEventListener('loadedmetadata',startPlayback,{once:true});
+  }
+}
+
+function closeVideoModal(){
+  if(!videoModal || !videoModalPlayer)return;
+
+  // Return the fullscreen position to the inline preview for continuity.
+  if(modalSourcePreview && Number.isFinite(videoModalPlayer.currentTime)){
+    try{modalSourcePreview.currentTime=videoModalPlayer.currentTime;}catch(e){}
+  }
+
+  videoModalPlayer.pause();
+  videoModalPlayer.removeAttribute('src');
+  videoModalPlayer.load();
+
+  videoModal.classList.remove('open');
+  videoModal.setAttribute('aria-hidden','true');
+  document.body.classList.remove('video-open');
+
+  modalSourcePreview=null;
+
+  // Do not auto-resume TJ if user manually paused it before.
+  if(modalWasTjPlaying && typeof tjAudio!=='undefined' && tjAudio){
+    const p=tjAudio.play();
+    if(p && typeof p.catch==='function')p.catch(()=>{});
+  }
+  modalWasTjPlaying=false;
+
+  schedulePreviewUpdate();
+}
+
+
+// Clicking a video opens fullscreen.
+// IMPORTANT: the horizontal Gallery uses pointer capture for drag.
+// On some browsers that prevents the card/video from receiving the final click,
+// so we handle click-vs-drag at the Gallery/container level with hit-testing.
+
+function videoAtPoint(x,y){
+  const els=document.elementsFromPoint(x,y);
+  for(const el of els){
+    if(el.classList && el.classList.contains('video-preview'))return el;
+    const card=el.closest?.('article, .gm-game-cover, .gm-cover');
+    const preview=card?.querySelector?.('.video-preview');
+    if(preview)return preview;
+  }
+  return null;
+}
+
+// Galleries: distinguish a short click from a drag.
+// A short press/release on a video viewport opens fullscreen.
+document.querySelectorAll('.gallery').forEach(g=>{
+  let videoPress=null;
+  let vx=0,vy=0,videoMoved=false;
+
+  g.addEventListener('pointerdown',e=>{
+    videoPress=videoAtPoint(e.clientX,e.clientY);
+    vx=e.clientX;vy=e.clientY;videoMoved=false;
+  },true);
+
+  g.addEventListener('pointermove',e=>{
+    if(!videoPress)return;
+    if(Math.hypot(e.clientX-vx,e.clientY-vy)>10)videoMoved=true;
+  },true);
+
+  g.addEventListener('pointerup',e=>{
+    if(videoPress && !videoMoved){
+      const releasedOn=videoAtPoint(e.clientX,e.clientY);
+      if(releasedOn===videoPress){
+        e.preventDefault();
+        e.stopPropagation();
+        openVideoModal(videoPress);
+      }
+    }
+    videoPress=null;videoMoved=false;
+  },true);
+
+  g.addEventListener('pointercancel',()=>{
+    videoPress=null;videoMoved=false;
+  },true);
+});
+
+// Video previews outside a horizontal Gallery (for example project hero videos)
+// open directly on click.
+videoPreviews.forEach(preview=>{
+  if(preview.closest('.gallery'))return;
+
+  const clickTarget=preview.closest('.gm-game-cover, .gm-cover, article') || preview;
+  clickTarget.style.cursor='zoom-in';
+
+  let sx=0,sy=0,moved=false;
+  clickTarget.addEventListener('pointerdown',e=>{
+    sx=e.clientX;sy=e.clientY;moved=false;
+  },true);
+  clickTarget.addEventListener('pointermove',e=>{
+    if(Math.hypot(e.clientX-sx,e.clientY-sy)>10)moved=true;
+  },true);
+  clickTarget.addEventListener('pointerup',e=>{
+    if(!moved){
+      e.preventDefault();
+      e.stopPropagation();
+      openVideoModal(preview);
+    }
+  },true);
+});
+if(videoClose)videoClose.addEventListener('click',e=>{
+  e.stopPropagation();
+  closeVideoModal();
+});
+
+if(videoModal)videoModal.addEventListener('click',e=>{
+  if(e.target===videoModal)closeVideoModal();
+});
+
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape' && videoModal && videoModal.classList.contains('open')){
+    closeVideoModal();
+  }
+});
+
+// Re-evaluate which preview is centered whenever the page or a horizontal
+// Gallery moves.
+window.addEventListener('scroll',schedulePreviewUpdate,{passive:true});
+window.addEventListener('resize',schedulePreviewUpdate,{passive:true});
+document.querySelectorAll('.gallery').forEach(g=>{
+  g.addEventListener('scroll',schedulePreviewUpdate,{passive:true});
+});
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden){
+    videoPreviews.forEach(v=>v.pause());
+  }else{
+    schedulePreviewUpdate();
+  }
+});
+setTimeout(schedulePreviewUpdate,120);
+/* TJ slideshow + music.
+   Images advance on a timer. Video slides are never cut short: the slideshow waits
+   until the active clip reaches its natural end, then advances to the next slide. */
+var tjShow=document.getElementById('tj');
+var tjAudio=document.getElementById('tjAudio');
+var tjPlay=document.getElementById('tjPlay');
+var tjPrev=document.getElementById('tjPrev');
+var tjNext=document.getElementById('tjNext');
+var tjMute=document.getElementById('tjMute');
+var tjVolume=document.getElementById('tjVolume');
+var tjTime=document.getElementById('tjTime');
+var tjProgress=document.getElementById('tjProgress');
+var tjProgressBar=document.getElementById('tjProgressBar');
+var tjNowPlaying=document.getElementById('tjNowPlaying');
+var tjTrackNo=document.getElementById('tjTrackNo');
+var tjSlides=[...document.querySelectorAll('.tj-slide')];
+var tjCaption=document.getElementById('tjCaption');
+var tjCount=document.getElementById('tjCount');
+const TJ_IMAGE_SECONDS=4.2;
+const TJ_PREVIEW_SECONDS=120; // 每首歌试听 2 分钟自动切下一首
+let tjIndex=0;
+let tjTrackIndex=0;
+const tjTracks=[
+  {name:'霓虹侦探', src:'assets/tj_neon_detective.mp3'},
+  {name:'Monster / 我们都不用说', src:'assets/tj_monster.wav'},
+  {name:'别怕慢慢走', src:'assets/tj_biepa.wav'}
+];
+function tjLoadTrack(i,autoplay){
+  tjTrackIndex=((i%tjTracks.length)+tjTracks.length)%tjTracks.length;
+  const tr=tjTracks[tjTrackIndex];
+  tjAudio.src=tr.src;
+  if(tjNowPlaying)tjNowPlaying.textContent=tr.name;
+  if(tjTrackNo)tjTrackNo.textContent=String(tjTrackIndex+1).padStart(2,'0')+' / '+String(tjTracks.length).padStart(2,'0');
+  tjAudio.load();
+  if(autoplay){const p=tjAudio.play();if(p&&typeof p.catch==='function')p.catch(()=>{});}
+}
+function tjNextTrack(){tjLoadTrack(tjTrackIndex+1,true);}
+function tjPrevTrack(){tjLoadTrack(tjTrackIndex-1,true);}
+let tjSlideTimer=null;
+let tjVideoEndedCleanup=null;
+
+function tjFormat(sec){
+  if(!Number.isFinite(sec))sec=0;
+  const m=Math.floor(sec/60);
+  const s=Math.floor(sec%60);
+  return String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+}
+function tjClearSchedule(){
+  if(tjSlideTimer){clearTimeout(tjSlideTimer);tjSlideTimer=null;}
+  if(tjVideoEndedCleanup){tjVideoEndedCleanup();tjVideoEndedCleanup=null;}
+}
+function tjPauseInlineVideos(except=null){
+  document.querySelectorAll('.tj-inline-video').forEach(v=>{if(v!==except)v.pause();});
+}
+function tjScheduleCurrent(){
+  tjClearSchedule();
+  if(!tjSlides.length || tjAudio.paused || tjAudio.ended)return;
+  const slide=tjSlides[tjIndex];
+  const v=slide.querySelector('.tj-inline-video');
+  if(v){
+    tjPauseInlineVideos(v);
+    v.muted=true;
+    v.loop=false;
+    try{v.currentTime=0;}catch(e){}
+    const advance=()=>{
+      if(tjIndex!==tjSlides.indexOf(slide))return;
+      tjVideoEndedCleanup=null;
+      if(!tjAudio.paused && !tjAudio.ended)tjSetSlide(tjIndex+1,true);
+    };
+    v.addEventListener('ended',advance,{once:true});
+    tjVideoEndedCleanup=()=>v.removeEventListener('ended',advance);
+    const playVideo=()=>{const p=v.play();if(p&&typeof p.catch==='function')p.catch(()=>{});};
+    if(v.readyState>=2)playVideo();
+    else v.addEventListener('canplay',playVideo,{once:true});
+  }else{
+    tjPauseInlineVideos();
+    tjSlideTimer=setTimeout(()=>{
+      if(!tjAudio.paused && !tjAudio.ended)tjSetSlide(tjIndex+1,true);
+    },TJ_IMAGE_SECONDS*1000);
+  }
+}
+function tjSetSlide(idx,schedule=false){
+  if(!tjSlides.length)return;
+  tjClearSchedule();
+  tjIndex=((idx%tjSlides.length)+tjSlides.length)%tjSlides.length;
+  tjSlides.forEach((s,i)=>s.classList.toggle('active',i===tjIndex));
+  tjPauseInlineVideos();
+  tjCaption.textContent=tjSlides[tjIndex].dataset.caption || '';
+  tjCount.textContent=String(tjIndex+1).padStart(2,'0')+' / '+String(tjSlides.length).padStart(2,'0');
+  if(schedule && !tjAudio.paused && !tjAudio.ended)tjScheduleCurrent();
+}
+tjSetSlide(0,false);
+tjLoadTrack(0,false);
+tjAudio.volume=parseFloat(tjVolume.value);
+
+tjPlay.addEventListener('click',async()=>{
+  if(tjAudio.paused){
+    try{await tjAudio.play();}catch(e){}
+  }else tjAudio.pause();
+});
+tjAudio.addEventListener('play',()=>{
+  tjPlay.textContent='PAUSE / 暂停';
+  tjShow.classList.add('playing');
+  tjScheduleCurrent();
+});
+tjAudio.addEventListener('pause',()=>{
+  tjPlay.textContent='PLAY / 播放';
+  tjShow.classList.remove('playing');
+  tjClearSchedule();
+  tjPauseInlineVideos();
+});
+tjAudio.addEventListener('ended',()=>{
+  tjClearSchedule();tjPauseInlineVideos();tjNextTrack();
+});
+tjAudio.addEventListener('timeupdate',()=>{
+  // 每首歌试听封顶 2 分钟，到时自动切下一首（循环）
+  if(tjAudio.currentTime>=TJ_PREVIEW_SECONDS){tjNextTrack();return;}
+  const cap=Number.isFinite(tjAudio.duration)&&tjAudio.duration<TJ_PREVIEW_SECONDS?tjAudio.duration:TJ_PREVIEW_SECONDS;
+  const pct=Math.max(0,Math.min(100,(tjAudio.currentTime/cap)*100));
+  tjProgressBar.style.width=pct+'%';
+  tjTime.textContent=tjFormat(tjAudio.currentTime)+' / '+tjFormat(cap);
+});
+tjPrev.addEventListener('click',()=>tjPrevTrack());
+tjNext.addEventListener('click',()=>tjNextTrack());
+tjMute.addEventListener('click',()=>{
+  tjAudio.muted=!tjAudio.muted;
+  tjMute.textContent=tjAudio.muted?'×':'♪';
+});
+tjVolume.addEventListener('input',()=>{
+  tjAudio.volume=parseFloat(tjVolume.value);
+  if(tjAudio.volume>0)tjAudio.muted=false;
+  tjMute.textContent=tjAudio.muted?'×':'♪';
+});
+tjProgress.addEventListener('click',e=>{
+  const r=tjProgress.getBoundingClientRect();
+  const x=Math.max(0,Math.min(r.width,e.clientX-r.left));
+  if(Number.isFinite(tjAudio.duration))tjAudio.currentTime=(x/r.width)*tjAudio.duration;
+});
+
+document.querySelectorAll('.tj-inline-video').forEach(v=>{
+  v.loop=false;
+  v.addEventListener('click',e=>{e.stopPropagation();openVideoModal(v);});
+});
+
+/* ---------- EDIT MODE v30 ----------
+   Entry: visible EDIT button at upper-right.
+   Text: click any text to edit; A− / A+ / Reset controls size. 字距 and 行距 controls adjust spacing.
+   COLOR: the color swatch changes the active text color; 颜色重置 restores its saved/default color.
+   Gallery: drag cards to reorder while editing.
+   REAL SAVE: SAVE sends the current DOM + manifest to the local START.bat server,
+   which overwrites the existing index.html and media_manifest.js in place.
+   No file/folder picker and no Save As copy are used.
+
+   IMPORTANT: launch the site with START.bat. Direct file:// pages are read-only by browser security. */
+(function(){
+  const STORAGE_KEY='abingo_portfolio_edit_v31';
+  const PREVIOUS_STORAGE_KEYS=['abingo_portfolio_edit_v30','abingo_portfolio_edit_v26','abingo_portfolio_edit_v25','abingo_portfolio_edit_v24','abingo_portfolio_dev_v20'];
+  const SAVE_ENDPOINT='/__abingo_save';
+  const entry=document.getElementById('devEntry');
+  const toolbar=document.getElementById('devToolbar');
+  const stateEl=document.getElementById('devSaveState');
+  const toast=document.getElementById('devToast');
+  const minus=document.getElementById('devFontMinus');
+  const plus=document.getElementById('devFontPlus');
+  const fontReset=document.getElementById('devFontReset');
+  const letterMinus=document.getElementById('devLetterMinus');
+  const letterPlus=document.getElementById('devLetterPlus');
+  const letterReset=document.getElementById('devLetterReset');
+  const lineMinus=document.getElementById('devLineMinus');
+  const linePlus=document.getElementById('devLinePlus');
+  const lineReset=document.getElementById('devLineReset');
+  const colorPicker=document.getElementById('devColor');
+  const colorReset=document.getElementById('devColorReset');
+  const saveBtn=document.getElementById('devSave');
+  const exitBtn=document.getElementById('devExit');
+  const resetSiteBtn=document.getElementById('devResetSite');
+  let dev=false,activeText=null,dirty=false,saving=false;
+
+  function safeLoad(){
+    const keys=[STORAGE_KEY,...PREVIOUS_STORAGE_KEYS];
+    for(const key of keys){
+      try{
+        const raw=localStorage.getItem(key);
+        if(raw){
+          const parsed=JSON.parse(raw);
+          if(parsed&&typeof parsed==='object')return parsed;
+        }
+      }catch(e){}
+    }
+    return {};
+  }
+  let store=safeLoad();
+  store.version=30;store.text=store.text||{};store.font=store.font||{};store.letter=store.letter||{};store.line=store.line||{};store.color=store.color||{};store.galleries=store.galleries||{};
+
+  const textSelector='h1,h2,h3,p,.kicker,.value,.desc,.pill,.label b,.label span,.collab-no,.collab-name,.collab-type,.collab-foot,.hero-number,.hero-name,.hero-role,.hero-statement,.hero-signal,.hero-year,.hero-index,.brand,.links a,.yearrail a,.mega,.tj-lead,.tj-meta,.tj-caption,.tj-profile-bio,.tj-fact,.tj-position-row,.tj-keywords span,.tj-profile-photo .mark b,.tj-profile-photo .mark span,.tj-album-head small,.tj-album-head p,.tj-track,.tj-album-foot,.legacy-note,.contact footer div,.nextcard b,.nextcard span,.path div,.gm-copy p,.axi-copy p,.gm-game-copy p,.gm-character,.dragon-material-note,.placeholder b,.placeholder em,.flow b,.flow small,.story-intro,.story-side-note,.story-node b,.story-node p,.story-node small,.story-tag';
+  const editable=[...document.querySelectorAll(textSelector)].filter(el=>!el.closest('#devToolbar')&&!el.closest('.video-modal')&&!el.closest('button'));
+
+  function elementPath(el,scope){
+    const parts=[];let node=el;
+    while(node&&node!==scope){
+      const parent=node.parentElement;if(!parent)break;
+      const same=[...parent.children].filter(c=>c.tagName===node.tagName);
+      const idx=same.indexOf(node)+1;
+      parts.unshift(node.tagName.toLowerCase()+':nth-of-type('+idx+')');
+      node=parent;
+    }
+    return parts.join('>');
+  }
+  function keyFor(el){
+    if(el.dataset.editKey)return el.dataset.editKey;
+    const scope=el.closest('section[id]')||el.closest('nav')||document.body;
+    const scopeKey=scope.id?('#'+scope.id):(scope.tagName.toLowerCase()+'.'+(scope.classList[0]||'root'));
+    return scopeKey+'|'+elementPath(el,scope);
+  }
+
+  const defaults=new Map();
+  editable.forEach(el=>{
+    const key=keyFor(el);el.dataset.devKey=key;
+    defaults.set(key,{html:el.innerHTML,font:el.style.fontSize||'',letter:el.style.letterSpacing||'',line:el.style.lineHeight||'',color:el.style.color||''});
+    if(Object.prototype.hasOwnProperty.call(store.text,key))el.innerHTML=store.text[key];
+    if(store.font[key])el.style.fontSize=store.font[key];
+    if(store.letter[key])el.style.letterSpacing=store.letter[key];
+    if(store.line[key])el.style.lineHeight=store.line[key];
+    if(store.color[key])el.style.color=store.color[key];
+  });
+
+  const galleries=[...document.querySelectorAll('.gallery')];
+  const galleryDefaults=new Map();
+  galleries.forEach((g,gi)=>{
+    const section=g.closest('section[id]');
+    const sectionKey=section?.id||('section-'+gi);
+    const gkey=sectionKey+'|gallery-'+[...document.querySelectorAll('.gallery')].filter(x=>(x.closest('section[id]')?.id||'')===sectionKey).indexOf(g);
+    g.dataset.devGallery=gkey;
+    const cards=[...g.children].filter(el=>el.tagName==='ARTICLE');
+    cards.forEach((card,ci)=>{
+      const media=card.querySelector(':scope > img, :scope > video');
+      const signature=media?.getAttribute('src')||card.querySelector('.placeholder em')?.textContent||('item-'+ci);
+      card.dataset.devItem=gkey+'|'+signature;
+    });
+    galleryDefaults.set(gkey,cards.map(c=>c.dataset.devItem));
+    const order=store.galleries[gkey];
+    if(Array.isArray(order)){
+      const byId=new Map(cards.map(c=>[c.dataset.devItem,c]));
+      order.forEach(id=>{const c=byId.get(id);if(c)g.appendChild(c);});
+      cards.forEach(c=>{if(!order.includes(c.dataset.devItem))g.appendChild(c);});
+      g.dispatchEvent(new Event('devreorder'));
+    }
+  });
+
+  function setState(text){if(stateEl)stateEl.textContent=text;}
+  function showToast(text='SAVED'){
+    if(!toast)return;toast.textContent=text;toast.classList.add('show');
+    clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>toast.classList.remove('show'),1900);
+  }
+  function markDirty(){dirty=true;setState('UNSAVED');}
+
+  function captureCurrentState(){
+    editable.forEach(el=>{
+      const k=el.dataset.devKey;if(!k)return;
+      store.text[k]=el.innerHTML;
+      if(el.style.fontSize)store.font[k]=el.style.fontSize;else delete store.font[k];
+      if(el.style.letterSpacing)store.letter[k]=el.style.letterSpacing;else delete store.letter[k];
+      if(el.style.lineHeight)store.line[k]=el.style.lineHeight;else delete store.line[k];
+      if(el.style.color)store.color[k]=el.style.color;else delete store.color[k];
+    });
+    galleries.forEach(g=>{
+      const k=g.dataset.devGallery;
+      store.galleries[k]=[...g.children].filter(el=>el.tagName==='ARTICLE').map(c=>c.dataset.devItem);
+    });
+    store.version=30;
+    store.savedAt=new Date().toISOString();
+  }
+
+  function saveRecoveryBuffer(){
+    captureCurrentState();
+    try{localStorage.setItem(STORAGE_KEY,JSON.stringify(store));}catch(e){}
+  }
+  function clearRecoveryBuffers(){
+    try{
+      localStorage.removeItem(STORAGE_KEY);
+      PREVIOUS_STORAGE_KEYS.forEach(k=>localStorage.removeItem(k));
+    }catch(e){}
+  }
+
+  function normalizedSrc(src){return String(src||'').replace(/^\.\//,'').replace(/\\/g,'/');}
+  function buildManifestSnapshot(){
+    const source=window.PAGE_MEDIA_MANIFEST||{};
+    let manifest;
+    try{manifest=JSON.parse(JSON.stringify(source));}catch(e){manifest={};}
+    const bindings=[
+      ['#past .gallery','P01'],['#naruto .gallery','P02'],['#sandbox .gallery','P03'],
+      ['#product .gallery','P04'],['#xolo-ip .gallery','P05'],['#dragon .gallery','P06'],
+      ['#axi .gallery','P07'],['#gm .gallery','P08'],['#gmgame .gallery','P09']
+    ];
+    bindings.forEach(([selector,folder])=>{
+      const g=document.querySelector(selector);
+      const items=Array.isArray(manifest[folder])?manifest[folder]:null;
+      if(!g||!items)return;
+      const bySrc=new Map(items.map(item=>[normalizedSrc(item.src),item]));
+      const ordered=[];
+      [...g.children].filter(el=>el.tagName==='ARTICLE').forEach(card=>{
+        const media=card.querySelector(':scope > img, :scope > video');
+        if(!media)return;
+        const src=normalizedSrc(media.getAttribute('src'));
+        const original=bySrc.get(src);
+        if(!original)return;
+        const item={...original};
+        const title=card.querySelector('.label b');
+        const subtitle=card.querySelector('.label span');
+        if(title){item.title=title.textContent.trim();item.caption=item.title;}
+        if(subtitle)item.subtitle=subtitle.textContent.trim();
+        ordered.push(item);bySrc.delete(src);
+      });
+      bySrc.forEach(item=>ordered.push(item));
+      if(folder==='P04')ordered.sort((a,b)=>(a.type==='video'?0:1)-(b.type==='video'?0:1));
+      manifest[folder]=ordered;
+    });
+    return manifest;
+  }
+
+  function cleanSerializedDocument(){
+    const root=document.documentElement.cloneNode(true);
+    const body=root.querySelector('body');
+    body?.classList.remove('dev-mode','video-open');
+    root.querySelector('#topnav')?.classList.remove('scrolled');
+    root.querySelectorAll('.yearrail a.active').forEach(el=>el.classList.remove('active'));
+    root.querySelector('.yearrail a[data-id="top"]')?.classList.add('active');
+    root.querySelectorAll('.reveal.show').forEach(el=>el.classList.remove('show'));
+    root.querySelectorAll('.gallery-counter').forEach(el=>el.remove());
+    root.querySelectorAll('.dev-dragging,.is-active-preview').forEach(el=>el.classList.remove('dev-dragging','is-active-preview'));
+    root.querySelectorAll('.auto-media-card').forEach(el=>{
+      el.classList.remove('auto-media-card');
+      el.style.removeProperty('--media-ratio');
+      if(!el.getAttribute('style'))el.removeAttribute('style');
+    });
+    root.querySelectorAll('[contenteditable]').forEach(el=>el.removeAttribute('contenteditable'));
+    root.querySelectorAll('[spellcheck]').forEach(el=>el.removeAttribute('spellcheck'));
+    root.querySelectorAll('[draggable]').forEach(el=>el.removeAttribute('draggable'));
+    root.querySelectorAll('[data-dev-key]').forEach(el=>el.removeAttribute('data-dev-key'));
+    root.querySelectorAll('[data-dev-gallery]').forEach(el=>el.removeAttribute('data-dev-gallery'));
+    root.querySelectorAll('[data-dev-item]').forEach(el=>el.removeAttribute('data-dev-item'));
+    const tb=root.querySelector('#devToolbar');if(tb)tb.setAttribute('aria-hidden','true');
+    const state=root.querySelector('#devSaveState');if(state)state.textContent='READY';
+    const savedToast=root.querySelector('#devToast');if(savedToast){savedToast.textContent='SAVED';savedToast.classList.remove('show');}
+    const cp=root.querySelector('#devColor');if(cp)cp.value='#f5f4ef';
+    const modal=root.querySelector('#videoModal');if(modal){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');}
+    const modalPlayer=root.querySelector('#videoModalPlayer');if(modalPlayer)modalPlayer.removeAttribute('src');
+
+    let marker=root.querySelector('meta[name="abingo-direct-save"]');
+    if(!marker){marker=document.createElement('meta');marker.setAttribute('name','abingo-direct-save');root.querySelector('head')?.appendChild(marker);}
+    marker.setAttribute('content',new Date().toISOString());
+    return '<!doctype html>\n'+root.outerHTML+'\n';
+  }
+
+  function buildManifestFile(){
+    return 'window.PAGE_MEDIA_MANIFEST = '+JSON.stringify(buildManifestSnapshot(),null,2)+';\n';
+  }
+
+  function refreshSavedBaseline(){
+    defaults.clear();
+    editable.forEach(el=>defaults.set(el.dataset.devKey,{html:el.innerHTML,font:el.style.fontSize||'',letter:el.style.letterSpacing||'',line:el.style.lineHeight||'',color:el.style.color||''}));
+    galleries.forEach(g=>galleryDefaults.set(g.dataset.devGallery,[...g.children].filter(el=>el.tagName==='ARTICLE').map(c=>c.dataset.devItem)));
+  }
+
+  async function saveAll(show=true){
+    if(saving)return false;
+    captureCurrentState();
+    if(location.protocol==='file:'){
+      saveRecoveryBuffer();
+      setState('RUN START.BAT');
+      if(show)showToast('请先双击 START.bat，再从自动打开的页面 EDIT / SAVE');
+      return false;
+    }
+    saving=true;setState('SAVING...');
+    try{
+      const response=await fetch(SAVE_ENDPOINT,{
+        method:'POST',
+        headers:{'Content-Type':'application/json;charset=UTF-8'},
+        cache:'no-store',
+        body:JSON.stringify({html:cleanSerializedDocument(),manifest:buildManifestFile()})
+      });
+      let data={};
+      try{data=await response.json();}catch(e){}
+      if(!response.ok||data.ok!==true)throw new Error(data.error||('SAVE HTTP '+response.status));
+      clearRecoveryBuffers();
+      refreshSavedBaseline();
+      store={version:31,text:{},font:{},letter:{},line:{},color:{},galleries:{},savedAt:new Date().toISOString()};
+      dirty=false;setState('FILE SAVED');
+      if(show)showToast('已直接覆盖原文件 · 未生成旧版');
+      return true;
+    }catch(e){
+      saveRecoveryBuffer();
+      setState('SAVE ERROR');
+      if(show)showToast('保存服务未连接，请重新双击 START.bat');
+      console.error('Direct overwrite save failed:',e);
+      return false;
+    }finally{saving=false;}
+  }
+
+  function setEditability(on){
+    editable.forEach(el=>{
+      if(on){el.setAttribute('contenteditable','true');el.setAttribute('spellcheck','false');}
+      else{el.removeAttribute('contenteditable');el.removeAttribute('spellcheck');}
+    });
+    galleries.forEach(g=>[...g.children].filter(el=>el.tagName==='ARTICLE').forEach(card=>card.draggable=on));
+  }
+
+  function rgbToHex(value){
+    if(!value)return '#f5f4ef';
+    if(/^#[0-9a-f]{6}$/i.test(value))return value;
+    const m=value.match(/rgba?\(\s*(\d+)\D+(\d+)\D+(\d+)/i);
+    if(!m)return '#f5f4ef';
+    return '#'+[m[1],m[2],m[3]].map(n=>Math.max(0,Math.min(255,Number(n))).toString(16).padStart(2,'0')).join('');
+  }
+  function syncColorPicker(){
+    if(colorPicker&&activeText)colorPicker.value=rgbToHex(getComputedStyle(activeText).color);
+  }
+  function activateText(el){activeText=el;syncColorPicker();}
+
+  function enterDev(){
+    if(dev)return;dev=true;document.body.classList.add('dev-mode');toolbar?.setAttribute('aria-hidden','false');
+    setEditability(true);videoPreviews?.forEach?.(v=>v.pause());setState(dirty?'UNSAVED':'READY');
+    showToast(location.protocol==='file:'?'EDIT MODE · 保存前请运行 START.bat':'EDIT MODE · SAVE 直接覆盖原文件');
+  }
+  async function exitDev(){
+    if(!dev)return;
+    if(saving){showToast('正在保存，请稍候');return;}
+    if(exitBtn)exitBtn.disabled=true;
+    if(saveBtn)saveBtn.disabled=true;
+    setState('EXIT + SAVING...');
+    const ok=await saveAll(true);
+    if(!ok){
+      if(exitBtn)exitBtn.disabled=false;
+      if(saveBtn)saveBtn.disabled=false;
+      showToast('保存失败，未退出 EDIT');
+      return;
+    }
+    dev=false;document.body.classList.remove('dev-mode');toolbar?.setAttribute('aria-hidden','true');
+    setEditability(false);activeText=null;schedulePreviewUpdate?.();
+    if(exitBtn)exitBtn.disabled=false;
+    if(saveBtn)saveBtn.disabled=false;
+    setState('SAVED');showToast('已覆盖原文件并退出 EDIT');
+  }
+  function resetSite(){
+    if(!dev)return;
+    const ok=window.confirm('恢复到“最近一次已保存到文件”的文字、字号、颜色和 Gallery 顺序？\n未保存的修改会被丢弃。');
+    if(!ok)return;
+    editable.forEach(el=>{
+      const d=defaults.get(el.dataset.devKey);if(!d)return;el.innerHTML=d.html;
+      if(d.font)el.style.fontSize=d.font;else el.style.removeProperty('font-size');
+      if(d.letter)el.style.letterSpacing=d.letter;else el.style.removeProperty('letter-spacing');
+      if(d.line)el.style.lineHeight=d.line;else el.style.removeProperty('line-height');
+      if(d.color)el.style.color=d.color;else el.style.removeProperty('color');
+    });
+    galleries.forEach(g=>{
+      const ids=galleryDefaults.get(g.dataset.devGallery)||[];
+      const byId=new Map([...g.children].filter(el=>el.tagName==='ARTICLE').map(c=>[c.dataset.devItem,c]));
+      ids.forEach(id=>{const c=byId.get(id);if(c)g.appendChild(c);});
+      g.dispatchEvent(new Event('devreorder'));
+    });
+    clearRecoveryBuffers();
+    store={version:31,text:{},font:{},letter:{},line:{},color:{},galleries:{}};
+    dirty=false;setState('SAVED BASE');syncColorPicker();showToast('已恢复最近保存版本');
+  }
+
+  /* EDIT MODE disabled for public build — 2026-09-03. Restore: remove display:none on .edit-entry and re-enable this binding. */
+  /* entry?.addEventListener('click',enterDev); */
+  editable.forEach(el=>{
+    el.addEventListener('focus',()=>{if(dev)activateText(el);});
+    el.addEventListener('pointerdown',e=>{if(dev){activateText(el);e.stopPropagation();}},true);
+    el.addEventListener('input',()=>{if(dev)markDirty();});
+    if(el.matches('a'))el.addEventListener('click',e=>{if(dev)e.preventDefault();});
+  });
+
+  function changeFont(delta){
+    if(!dev||!activeText){showToast('先点击一段文字');return;}
+    const current=parseFloat(getComputedStyle(activeText).fontSize)||16;
+    const next=Math.max(7,Math.min(260,current+delta));
+    activeText.style.fontSize=next.toFixed(1)+'px';markDirty();activeText.focus();
+  }
+  minus?.addEventListener('click',()=>changeFont(-2));
+  plus?.addEventListener('click',()=>changeFont(2));
+  fontReset?.addEventListener('click',()=>{
+    if(!dev||!activeText){showToast('先点击一段文字');return;}
+    const d=defaults.get(activeText.dataset.devKey);
+    if(d?.font)activeText.style.fontSize=d.font;else activeText.style.removeProperty('font-size');
+    markDirty();activeText.focus();
+  });
+
+  function changeLetterSpacing(delta){
+    if(!dev||!activeText){showToast('先点击一段文字');return;}
+    const raw=getComputedStyle(activeText).letterSpacing;
+    const current=(raw==='normal'||!Number.isFinite(parseFloat(raw)))?0:parseFloat(raw);
+    const next=Math.max(-5,Math.min(30,current+delta));
+    activeText.style.letterSpacing=next.toFixed(1)+'px';markDirty();activeText.focus();
+  }
+  letterMinus?.addEventListener('click',()=>changeLetterSpacing(-0.5));
+  letterPlus?.addEventListener('click',()=>changeLetterSpacing(0.5));
+  letterReset?.addEventListener('click',()=>{
+    if(!dev||!activeText){showToast('先点击一段文字');return;}
+    const d=defaults.get(activeText.dataset.devKey);
+    if(d?.letter)activeText.style.letterSpacing=d.letter;else activeText.style.removeProperty('letter-spacing');
+    markDirty();activeText.focus();
+  });
+
+  function changeLineHeight(delta){
+    if(!dev||!activeText){showToast('先点击一段文字');return;}
+    const cs=getComputedStyle(activeText);
+    const fontSize=parseFloat(cs.fontSize)||16;
+    const linePx=parseFloat(cs.lineHeight);
+    const current=Number.isFinite(linePx)?(linePx/fontSize):1.2;
+    const next=Math.max(0.7,Math.min(4,current+delta));
+    activeText.style.lineHeight=next.toFixed(2);markDirty();activeText.focus();
+  }
+  lineMinus?.addEventListener('click',()=>changeLineHeight(-0.10));
+  linePlus?.addEventListener('click',()=>changeLineHeight(0.10));
+  lineReset?.addEventListener('click',()=>{
+    if(!dev||!activeText){showToast('先点击一段文字');return;}
+    const d=defaults.get(activeText.dataset.devKey);
+    if(d?.line)activeText.style.lineHeight=d.line;else activeText.style.removeProperty('line-height');
+    markDirty();activeText.focus();
+  });
+  colorPicker?.addEventListener('input',()=>{
+    if(!dev||!activeText){showToast('先点击一段文字');return;}
+    activeText.style.color=colorPicker.value;markDirty();
+  });
+  colorPicker?.addEventListener('change',()=>{if(activeText)activeText.focus();});
+  colorReset?.addEventListener('click',()=>{
+    if(!dev||!activeText){showToast('先点击一段文字');return;}
+    const d=defaults.get(activeText.dataset.devKey);
+    if(d?.color)activeText.style.color=d.color;else activeText.style.removeProperty('color');
+    syncColorPicker();markDirty();activeText.focus();
+  });
+  saveBtn?.addEventListener('click',async()=>{if(saving){showToast('正在保存，请稍候');return;}saveBtn.disabled=true;exitBtn&&(exitBtn.disabled=true);await saveAll(true);saveBtn.disabled=false;exitBtn&&(exitBtn.disabled=false);});
+  exitBtn?.addEventListener('click',async()=>{await exitDev();});
+  resetSiteBtn?.addEventListener('click',resetSite);
+
+  let dragCard=null;
+  galleries.forEach(g=>{
+    g.addEventListener('dragstart',e=>{
+      if(!dev)return;
+      if(e.target.closest?.('.video-preview')){e.preventDefault();return;}
+      const card=e.target.closest('article');if(!card||card.parentElement!==g)return;
+      dragCard=card;card.classList.add('dev-dragging');
+      if(e.dataTransfer){e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/plain',card.dataset.devItem||'card');}
+    });
+    g.addEventListener('dragover',e=>{
+      if(!dev||!dragCard||dragCard.parentElement!==g)return;e.preventDefault();
+      const cards=[...g.children].filter(el=>el.tagName==='ARTICLE'&&el!==dragCard);
+      let after=null;
+      for(const c of cards){const r=c.getBoundingClientRect();if(e.clientX<r.left+r.width/2){after=c;break;}}
+      if(after)g.insertBefore(dragCard,after);else g.appendChild(dragCard);
+    });
+    g.addEventListener('drop',e=>{if(!dev||!dragCard)return;e.preventDefault();g.dispatchEvent(new Event('devreorder'));markDirty();});
+    g.addEventListener('dragend',()=>{if(!dragCard)return;dragCard.classList.remove('dev-dragging');dragCard=null;g.dispatchEvent(new Event('devreorder'));markDirty();});
+  });
+
+
+  const tjSlides=[...document.querySelectorAll('.tj-slideshow .tj-slide-image')];
+  if(tjSlides.length>1){
+    let tjSlideIndex=0;
+    window.setInterval(()=>{
+      tjSlides[tjSlideIndex].classList.remove('active');
+      tjSlideIndex=(tjSlideIndex+1)%tjSlides.length;
+      tjSlides[tjSlideIndex].classList.add('active');
+    },3000);
+  }
+
+  window.addEventListener('beforeunload',()=>{if(dev&&dirty)saveRecoveryBuffer();});
+})();
+
+</script>
+
+<!-- 简繁自适应：按系统语言（简体/繁体）自动切换字体并转换整站文字；简体用户不加载转换库 -->
+<script>
+(function(){
+  function isTraditionalLocale(){
+    var langs = navigator.languages || [navigator.language || navigator.userLanguage || 'zh-CN'];
+    return [].concat(langs).some(function(l){
+      l = (''+l).toLowerCase();
+      if(l.indexOf('hant') !== -1) return true;
+      return /zh[-_](tw|hk|mo)$/.test(l);
+    });
+  }
+  if(!isTraditionalLocale()) return; // 简体系统：保持默认简体字体与文字，零额外下载
+  var root = document.documentElement;
+  root.classList.add('lang-zh-hant');
+  root.setAttribute('lang','zh-Hant');
+  root.classList.add('zh-pending'); // 转换前文字透明，避免简体先闪现
+  function run(OpenCC){
+    try{
+      var convert = OpenCC.Converter({from:'cn', to:'twp'});
+      var SKIP = {SCRIPT:1, STYLE:1, NOSCRIPT:1, TEXTAREA:1};
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+        acceptNode: function(n){
+          if(!n.nodeValue || !n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+          var p = n.parentNode;
+          if(p && SKIP[p.tagName]) return NodeFilter.FILTER_REJECT;
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      });
+      var nodes = [], cur; while((cur = walker.nextNode())) nodes.push(cur);
+      for(var i=0;i<nodes.length;i++){ nodes[i].nodeValue = convert(nodes[i].nodeValue); }
+      if(document.title) document.title = convert(document.title);
+    }catch(e){ /* 转换失败则降级：保持简体文字 */ }
+    root.classList.remove('zh-pending');
+  }
+  var s = document.createElement('script');
+  s.src = 'assets/opencc/opencc.full.js';
+  s.onload = function(){ if(window.OpenCC && window.OpenCC.Converter) run(window.OpenCC); else root.classList.remove('zh-pending'); };
+  s.onerror = function(){ root.classList.remove('zh-pending'); };
+  document.head.appendChild(s);
+})();
+</script>
+
+</body>
+</html>
