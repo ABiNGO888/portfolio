@@ -238,21 +238,23 @@ a{color:inherit;text-decoration:none} img,video{display:block;max-width:100%}
 
 /* ===== 易经王 LIVE CASE ===== */
 .iching-case{background:#0b0614;border-top:1px solid var(--line);min-height:100svh;display:flex;align-items:center}
-.iching-case .wrap{max-width:1240px;margin:0 auto;padding:11vh 6vw;display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:center}
+.iching-case .wrap{max-width:1240px;margin:0 auto;padding:12vh 6vw;display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:start}
 .iching-case .kicker{color:#b78bff}
-.iching-case h2{font-size:clamp(46px,6.2vw,104px);line-height:.86;letter-spacing:-.05em;margin:0 0 22px}
-.iching-case h2 span{color:#d8b6ff}
-.iching-case .value{font-size:clamp(18px,2vw,29px);line-height:1.42;max-width:560px;color:#efe7fb}
-.iching-case .desc{font-size:14px;line-height:1.82;color:#9a8fb0;max-width:540px;margin:17px 0 26px}
+.iching-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px 28px;flex-wrap:wrap;margin:0 0 28px}
+.iching-head h2{font-size:clamp(46px,6.2vw,104px);line-height:.96;letter-spacing:-.04em;margin:0;flex:1 1 auto;min-width:0}
+.iching-head h2 span{color:#d8b6ff}
+.iching-head .iching-link{flex:0 0 auto;align-self:flex-start;margin-top:clamp(6px,1.2vh,14px)}
+.iching-case .value{font-size:clamp(18px,2vw,29px);line-height:1.55;max-width:560px;color:#efe7fb;margin:0 0 22px}
+.iching-case .desc{font-size:15px;line-height:2;color:#9a8fb0;max-width:560px;margin:0 0 34px}
 .iching-case .pill{border-color:rgba(183,139,255,.24);color:#c6a9f2}
-.iching-facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:6px 0 26px;max-width:560px}
-.iching-fact{border:1px solid rgba(183,139,255,.18);border-radius:14px;padding:15px 17px;background:rgba(183,139,255,.05)}
-.iching-fact b{display:block;font-size:11px;letter-spacing:.14em;color:#b78bff;margin-bottom:6px}
-.iching-fact span{font-size:14px;color:#e8e0f5;line-height:1.5}
+.iching-facts{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:0 0 32px;max-width:560px}
+.iching-fact{border:1px solid rgba(183,139,255,.18);border-radius:16px;padding:19px 21px;background:rgba(183,139,255,.05)}
+.iching-fact b{display:block;font-size:11px;letter-spacing:.14em;color:#b78bff;margin-bottom:9px}
+.iching-fact span{font-size:15px;color:#e8e0f5;line-height:1.55}
 .iching-link{display:inline-flex;align-items:center;gap:12px;padding:15px 26px;border:1px solid rgba(183,139,255,.5);border-radius:99px;background:rgba(183,139,255,.12);color:#efd9ff;font-size:14px;font-weight:700;letter-spacing:.05em;text-decoration:none;transition:.2s}
 .iching-link:hover{background:rgba(183,139,255,.22);transform:translateY(-2px);color:#fff}
 .iching-link .url{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;opacity:.85}
-.iching-media{position:relative;min-height:auto;align-items:center;justify-content:center;overflow:visible;padding:0;grid-column:1/-1;margin-top:4px}.iching-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;width:100%;align-items:center}.iching-row .iching-slide{width:100%;height:min(64vh,700px);object-fit:contain;object-position:center;background:transparent;border-radius:18px;border:1px solid rgba(183,139,255,.16);opacity:1;display:block}
+.iching-media{position:relative;min-height:auto;align-items:center;justify-content:center;overflow:visible;padding:0;grid-column:1/-1;margin-top:34px}.iching-row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;width:100%;align-items:center}.iching-row .iching-slide{width:100%;height:min(64vh,700px);object-fit:contain;object-position:center;background:transparent;border-radius:18px;border:1px solid rgba(183,139,255,.16);opacity:1;display:block}
 
 /* ===== CONTACT: IP pitch ===== */
 .ip-pitch{margin-top:40px;max-width:1080px}
@@ -350,10 +352,15 @@ body.video-open{overflow:hidden}
   .gm-game-wait{grid-template-columns:1fr;padding:84px 22px}.tj-profile{display:block;min-height:auto}.tj-profile-photo{min-height:86svh;border-right:0;border-bottom:1px solid var(--line)}.tj-profile-photo .mark{left:22px;bottom:30px}.tj-profile-info{padding:76px 22px 54px}.tj-facts{grid-template-columns:1fr}.tj-profile-position{grid-template-columns:1fr}.tj-album{padding:72px 22px 62px;border-left:0;border-top:1px solid var(--line)}.tj-tracklist{grid-template-columns:1fr}.tj-track{min-height:52px}.tj-show{display:block;min-height:auto}.tj-copy{padding:84px 22px 36px;background:#090808}.tj-copy h2{font-size:22vw}.tj-stage{height:68svh}.tj-slide{padding:12px}.tj-caption{left:22px;bottom:22px}.tj-count{right:22px;top:22px}.tj-volume{width:82px}.next{padding:84px 22px}.contact{padding:84px 22px 36px}.contact footer{display:block;text-align:center}  .video-modal{padding:0}.video-modal video{width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;object-fit:contain}.video-close{right:12px;top:12px}
 }
 @media(max-width:1050px){
-  .iching-case .wrap{grid-template-columns:1fr;gap:30px;padding:84px 22px}
-  .iching-media{min-height:auto;padding:0;justify-content:center}
+  .iching-case .wrap{grid-template-columns:1fr;gap:34px;padding:84px 22px}
+  .iching-head{gap:14px 18px;margin-bottom:22px}
+  .iching-head .iching-link{margin-top:0;padding:12px 20px;font-size:13px}
+  .iching-media{min-height:auto;padding:0;justify-content:center;margin-top:24px}
   .iching-row{grid-template-columns:1fr;gap:14px}.iching-row .iching-slide{height:auto;max-height:72vh}
-  .iching-facts{grid-template-columns:1fr}
+  .iching-facts{grid-template-columns:1fr;gap:14px;margin-bottom:26px}
+  .iching-fact{padding:15px 17px}
+  .iching-fact span{font-size:14px;line-height:1.45}
+  .iching-case .desc{margin-bottom:26px;line-height:1.9}
   .ip-pitch-grid{grid-template-columns:1fr}
   .ip-contact{gap:12px 16px}
   .ip-contact-item{font-size:13px;padding:9px 16px}
@@ -820,7 +827,10 @@ body.video-open{overflow:hidden}
   <div class="wrap reveal">
     <div class="iching-info">
       <div class="kicker">12 / LIVE CASE — 易经王 ICHINGWANG</div>
-      <h2>易经王<br><span>ICHINGWANG</span></h2>
+      <div class="iching-head">
+        <h2>易经王<br><span>ICHINGWANG</span></h2>
+        <a class="iching-link" href="https://ichingwang.com" target="_blank" rel="noopener">访问官网 <span class="url">ichingwang.com ↗</span></a>
+      </div>
       <div class="value">AI 付费解卦 · 全球 5 语言 · 提问不留痕 · 隐私保密</div>
       <div class="desc">「ichingwang 易经王」是一个已经稳定上线的周易玄学产品，面向全球用户提供 AI 付费解读易经卜卦。正所谓「算卦容易解卦难」，易经王直接使用 AI 解决用户痛点，且提问后完全不留存用户信息，真正做到隐私保密。网站已实际运营，支持简体中文、繁体中文、英文、日文、韩文五种语言，覆盖海外与华语市场，提供按次咨询与订阅双模式收费。</div>
       <div class="iching-facts">
@@ -830,7 +840,6 @@ body.video-open{overflow:hidden}
         <div class="iching-fact"><b>WEBSITE</b><span>ichingwang.com</span></div>
       </div>
       <div class="pills"><span class="pill live">LIVE</span><span class="pill">周易玄学</span><span class="pill">GLOBAL</span><span class="pill">5 LANGUAGES</span><span class="pill">PAID</span></div>
-      <a class="iching-link" href="https://ichingwang.com" target="_blank" rel="noopener">访问官网 <span class="url">ichingwang.com ↗</span></a>
     </div>
     <div class="media iching-media" aria-label="易经王产品界面与场景">
       <div class="iching-row">
