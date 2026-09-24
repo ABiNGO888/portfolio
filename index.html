@@ -233,8 +233,39 @@ a{color:inherit;text-decoration:none} img,video{display:block;max-width:100%}
 
 /* NEXT + CONTACT */
 .next{min-height:72svh;padding:10vh 7vw;border-top:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}.next h2{margin:0;font-size:clamp(58px,10vw,170px);line-height:.82;letter-spacing:-.07em}.next p{max-width:760px;color:#898989;font-size:18px;line-height:1.6}.nextcard{margin-top:36px;max-width:780px;min-height:260px;border:1px solid var(--line);border-radius:26px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,#0b0b0b,#050505)}.nextcard b{font-size:clamp(36px,5vw,78px);line-height:.9}.nextcard span{font-size:10px;letter-spacing:.18em;color:#666}
-.contact{min-height:100svh;padding:12vh 6vw;display:flex;flex-direction:column;justify-content:space-between;border-top:1px solid var(--line);background:radial-gradient(circle at 80% 30%,rgba(124,255,66,.08),transparent 24%),#030303}.mega{font-size:clamp(70px,13vw,210px);line-height:.8;letter-spacing:-.075em;font-weight:950}.mega span{color:var(--acid)}.contact footer{display:flex;justify-content:space-between;gap:30px;color:#777;font-size:11px;line-height:1.7}
+.contact{min-height:100svh;padding:12vh 6vw;display:flex;flex-direction:column;justify-content:space-between;border-top:1px solid var(--line);background:radial-gradient(circle at 80% 30%,rgba(124,255,66,.08),transparent 24%),#030303}.mega{font-size:clamp(70px,13vw,210px);line-height:.8;letter-spacing:-.075em;font-weight:950}.mega span{color:var(--acid)}.contact footer{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;color:#777;font-size:11px;line-height:1.7}
 .home-btn{display:inline-flex;align-items:center;gap:10px;align-self:center;margin-top:42px;padding:15px 30px;border:1px solid rgba(124,255,66,.34);border-radius:99px;background:rgba(124,255,66,.08);color:#d8ffca;font-size:13px;font-weight:700;letter-spacing:.10em;text-decoration:none;cursor:pointer;transition:.2s}.home-btn:hover{background:rgba(124,255,66,.16);border-color:rgba(124,255,66,.6);color:#fff;transform:translateY(-2px)}
+
+/* ===== 易经王 LIVE CASE ===== */
+.iching-case{background:#0b0614;border-top:1px solid var(--line);min-height:100svh;display:flex;align-items:center}
+.iching-case .wrap{max-width:1240px;margin:0 auto;padding:11vh 6vw;display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:center}
+.iching-case .kicker{color:#b78bff}
+.iching-case h2{font-size:clamp(46px,6.2vw,104px);line-height:.86;letter-spacing:-.05em;margin:0 0 22px}
+.iching-case h2 span{color:#d8b6ff}
+.iching-case .value{font-size:clamp(18px,2vw,29px);line-height:1.42;max-width:560px;color:#efe7fb}
+.iching-case .desc{font-size:14px;line-height:1.82;color:#9a8fb0;max-width:540px;margin:17px 0 26px}
+.iching-case .pill{border-color:rgba(183,139,255,.24);color:#c6a9f2}
+.iching-facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:6px 0 26px;max-width:560px}
+.iching-fact{border:1px solid rgba(183,139,255,.18);border-radius:14px;padding:15px 17px;background:rgba(183,139,255,.05)}
+.iching-fact b{display:block;font-size:11px;letter-spacing:.14em;color:#b78bff;margin-bottom:6px}
+.iching-fact span{font-size:14px;color:#e8e0f5;line-height:1.5}
+.iching-link{display:inline-flex;align-items:center;gap:12px;padding:15px 26px;border:1px solid rgba(183,139,255,.5);border-radius:99px;background:rgba(183,139,255,.12);color:#efd9ff;font-size:14px;font-weight:700;letter-spacing:.05em;text-decoration:none;transition:.2s}
+.iching-link:hover{background:rgba(183,139,255,.22);transform:translateY(-2px);color:#fff}
+.iching-link .url{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;opacity:.85}
+.iching-media{position:relative;min-height:auto;align-items:center;justify-content:center;overflow:visible;padding:0;grid-column:1/-1;margin-top:4px}.iching-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;width:100%;align-items:center}.iching-row .iching-slide{width:100%;height:min(64vh,700px);object-fit:contain;object-position:center;background:transparent;border-radius:18px;border:1px solid rgba(183,139,255,.16);opacity:1;display:block}
+
+/* ===== CONTACT: IP pitch ===== */
+.ip-pitch{margin-top:40px;max-width:1080px}
+.ip-pitch-head{font-size:clamp(24px,3.2vw,50px);line-height:1.05;letter-spacing:-.03em;font-weight:850;margin-bottom:28px;color:#f4ffe9}
+.ip-pitch-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.ip-offer{border:1px solid rgba(124,255,66,.22);border-radius:18px;padding:22px 24px;background:rgba(124,255,66,.05)}
+.ip-offer-title{font-size:18px;font-weight:800;color:#d8ffca;margin-bottom:5px}
+.ip-offer-sub{font-size:14px;color:var(--acid);font-weight:700;letter-spacing:.03em;margin-bottom:9px}
+.ip-offer-desc{font-size:13px;line-height:1.7;color:#9ea99a}
+.ip-contact{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 26px;border-top:1px solid rgba(255,255,255,.08);padding-top:22px}.ip-contact-label{width:100%;text-align:center;margin-bottom:6px}
+.ip-contact-label{font-size:11px;letter-spacing:.2em;color:#7c8a78;text-transform:uppercase}
+.ip-contact-item{font-size:15px;color:#e8f5df;text-decoration:none;border:1px solid rgba(124,255,66,.3);border-radius:99px;padding:10px 20px;transition:.2s}
+.ip-contact-item:hover{background:rgba(124,255,66,.14);color:#fff;transform:translateY(-2px)}
 
 
 .gallery-counter{
@@ -316,7 +347,16 @@ body.video-open{overflow:hidden}
   .axi-onepage,.gm-takeover,.gm-game-intro{display:block;padding:84px 22px 48px;min-height:auto}.axi-head{display:block}.axi-copy h2,.gm-copy h2,.gm-game-copy h2{font-size:20vw}.axi-cover{width:82vw;aspect-ratio:941/1672;margin:28px auto 0;transform:none;max-height:96svh}.gm-cover,.gm-game-cover{width:82vw;height:56svh;margin:28px auto 0;transform:none}.axi-gallery-wrap{margin-top:24px;padding-top:20px}
   .axi-phone{flex-basis:76vw;height:var(--gallery-h-mobile);min-height:350px;border-radius:32px}.axi-poster{flex-basis:78vw;height:var(--gallery-h-mobile);min-height:350px}
   .gm-world .copy{padding-bottom:34px}.gm-character-grid{grid-template-columns:1fr;gap:8px}.dragon-placeholder{flex-basis:82vw;height:var(--gallery-h-mobile);min-height:350px;border-radius:21px}.gm-card,.gm-card.poster-card,.gm-card.op-card{flex-basis:auto;height:var(--gallery-h-mobile);min-height:350px}.gm-skill-card{flex-basis:auto;height:var(--gallery-h-mobile);min-height:350px}.gallery-counter{right:22px;bottom:22px}.edit-entry{right:20px;top:14px}.dev-toolbar{right:10px;top:66px;max-width:calc(100vw - 20px);flex-wrap:wrap;gap:6px}.dev-toolbar .dev-label{display:none}
-  .gm-game-wait{grid-template-columns:1fr;padding:84px 22px}.tj-profile{display:block;min-height:auto}.tj-profile-photo{min-height:86svh;border-right:0;border-bottom:1px solid var(--line)}.tj-profile-photo .mark{left:22px;bottom:30px}.tj-profile-info{padding:76px 22px 54px}.tj-facts{grid-template-columns:1fr}.tj-profile-position{grid-template-columns:1fr}.tj-album{padding:72px 22px 62px;border-left:0;border-top:1px solid var(--line)}.tj-tracklist{grid-template-columns:1fr}.tj-track{min-height:52px}.tj-show{display:block;min-height:auto}.tj-copy{padding:84px 22px 36px;background:#090808}.tj-copy h2{font-size:22vw}.tj-stage{height:68svh}.tj-slide{padding:12px}.tj-caption{left:22px;bottom:22px}.tj-count{right:22px;top:22px}.tj-volume{width:82px}.next{padding:84px 22px}.contact{padding:84px 22px 36px}.contact footer{display:block}  .video-modal{padding:0}.video-modal video{width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;object-fit:contain}.video-close{right:12px;top:12px}
+  .gm-game-wait{grid-template-columns:1fr;padding:84px 22px}.tj-profile{display:block;min-height:auto}.tj-profile-photo{min-height:86svh;border-right:0;border-bottom:1px solid var(--line)}.tj-profile-photo .mark{left:22px;bottom:30px}.tj-profile-info{padding:76px 22px 54px}.tj-facts{grid-template-columns:1fr}.tj-profile-position{grid-template-columns:1fr}.tj-album{padding:72px 22px 62px;border-left:0;border-top:1px solid var(--line)}.tj-tracklist{grid-template-columns:1fr}.tj-track{min-height:52px}.tj-show{display:block;min-height:auto}.tj-copy{padding:84px 22px 36px;background:#090808}.tj-copy h2{font-size:22vw}.tj-stage{height:68svh}.tj-slide{padding:12px}.tj-caption{left:22px;bottom:22px}.tj-count{right:22px;top:22px}.tj-volume{width:82px}.next{padding:84px 22px}.contact{padding:84px 22px 36px}.contact footer{display:block;text-align:center}  .video-modal{padding:0}.video-modal video{width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;object-fit:contain}.video-close{right:12px;top:12px}
+}
+@media(max-width:1050px){
+  .iching-case .wrap{grid-template-columns:1fr;gap:30px;padding:84px 22px}
+  .iching-media{min-height:auto;padding:0;justify-content:center}
+  .iching-row{grid-template-columns:1fr;gap:14px}.iching-row .iching-slide{height:auto;max-height:72vh}
+  .iching-facts{grid-template-columns:1fr}
+  .ip-pitch-grid{grid-template-columns:1fr}
+  .ip-contact{gap:12px 16px}
+  .ip-contact-item{font-size:13px;padding:9px 16px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
@@ -350,12 +390,12 @@ body.video-open{overflow:hidden}
 <nav class="topnav" id="topnav">
   <a class="brand" href="#top">ABiNGO <small>王盛业</small></a>
   <div class="links">
-    <a href="#past">PAST WORK</a><a href="#collabs">IP / BRAND</a><a href="#story">STORY</a><a href="#product">PRODUCT</a><a href="#dragon">DRAGON</a><a href="#axi">NEW IP</a><a href="#tj-profile">TJ</a><a href="#contact">CONTACT</a>
+    <a href="#past">PAST WORK</a><a href="#collabs">IP / BRAND</a><a href="#story">STORY</a><a href="#product">PRODUCT</a><a href="#dragon">DRAGON</a><a href="#axi">NEW IP</a><a href="#tj-profile">TJ</a><a href="#iching">易经王</a><a href="#contact">CONTACT</a>
   </div>
 </nav>
 
 <div class="yearrail">
-  <a href="#top" data-id="top" class="active">NOW</a><a href="#past" data-id="past">PAST</a><a href="#naruto" data-id="naruto">NARUTO</a><a href="#sandbox" data-id="sandbox">SANDBOX</a><a href="#collabs" data-id="collabs">IP/BRAND</a><a href="#story" data-id="story">STORY</a><a href="#product" data-id="product">PRODUCT</a><a href="#xolo-ip" data-id="xolo-ip">筱7</a><a href="#dragon" data-id="dragon">DRAGON</a><a href="#axi" data-id="axi">AXI</a><a href="#gm" data-id="gm">GM</a><a href="#tj-profile" data-id="tj-profile">TJ</a><a href="#contact" data-id="contact">NEXT</a>
+  <a href="#top" data-id="top" class="active">NOW</a><a href="#past" data-id="past">PAST</a><a href="#naruto" data-id="naruto">NARUTO</a><a href="#sandbox" data-id="sandbox">SANDBOX</a><a href="#collabs" data-id="collabs">IP/BRAND</a><a href="#story" data-id="story">STORY</a><a href="#product" data-id="product">PRODUCT</a><a href="#xolo-ip" data-id="xolo-ip">筱7</a><a href="#dragon" data-id="dragon">DRAGON</a><a href="#axi" data-id="axi">AXI</a><a href="#gm" data-id="gm">GM</a><a href="#tj-profile" data-id="tj-profile">TJ</a><a href="#iching" data-id="iching">易经王</a><a href="#contact" data-id="contact">NEXT</a>
 </div>
 
 <section class="hero hero-abstract" id="top">
@@ -775,9 +815,59 @@ body.video-open{overflow:hidden}
   </div>
 </section>
 
+<!-- ICHINGWANG: real live Zhouyi metaphysics product -->
+<section class="iching-case" id="iching">
+  <div class="wrap reveal">
+    <div class="iching-info">
+      <div class="kicker">12 / LIVE CASE — 易经王 ICHINGWANG</div>
+      <h2>易经王<br><span>ICHINGWANG</span></h2>
+      <div class="value">真实上线的周易玄学 AI 产品 · 5 种语言全球服务 · 付费订阅</div>
+      <div class="desc">易经王是一个已经稳定上线的周易玄学产品，面向全球用户提供付费命理、运势与健康咨询。网站已实际运营，支持简体中文、繁体中文、英文、日文、韩文五种语言，覆盖海外与华语市场，提供按次咨询与订阅双模式收费。</div>
+      <div class="iching-facts">
+        <div class="iching-fact"><b>PRODUCT</b><span>已上线运营 / 周易玄学 AI</span></div>
+        <div class="iching-fact"><b>LANGUAGES</b><span>简 / 繁 / EN / 日 / 韩 · 5 种</span></div>
+        <div class="iching-fact"><b>SERVICE</b><span>全球付费咨询 · 订阅制</span></div>
+        <div class="iching-fact"><b>WEBSITE</b><span>ichingwang.com</span></div>
+      </div>
+      <div class="pills"><span class="pill live">LIVE</span><span class="pill">周易玄学</span><span class="pill">GLOBAL</span><span class="pill">5 LANGUAGES</span><span class="pill">PAID</span></div>
+      <a class="iching-link" href="https://ichingwang.com" target="_blank" rel="noopener">访问官网 <span class="url">ichingwang.com ↗</span></a>
+    </div>
+    <div class="media iching-media" aria-label="易经王产品界面与场景">
+      <div class="iching-row">
+        <img class="iching-slide" src="MEDIA/P12/iching_app.png" alt="易经王应用界面">
+        <img class="iching-slide" src="MEDIA/P12/iching_scene_1.jpg" alt="易经王使用场景 01">
+        <img class="iching-slide" src="MEDIA/P12/iching_scene_2.jpg" alt="易经王使用场景 02">
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="contact" id="contact">
-  <div><div class="kicker reveal">12 / CONTACT</div><div class="mega reveal">BUILD THE<br><span>NEXT IP.</span></div></div>
-  <footer><div>王盛业 / ABiNGO<br>缤谷王 · 滨谷王</div><div>IP CREATION / BRAND × IP / HOLOGRAM / GAME / ANIMATION / MUSIC</div><div>CONTACT INFO → TO BE ADDED</div></footer>
+  <div class="reveal">
+    <div class="kicker">13 / CONTACT</div>
+    <div class="mega">BUILD THE<br><span>NEXT IP.</span></div>
+    <div class="ip-pitch">
+      <div class="ip-pitch-head">让您的 IP 更有魅力</div>
+      <div class="ip-pitch-grid">
+        <div class="ip-offer">
+          <div class="ip-offer-title">IP 诊断服务</div>
+          <div class="ip-offer-sub">每次 ¥3000 – 8000</div>
+          <div class="ip-offer-desc">从角色、世界观到变现路径，系统性梳理您的 IP 现状与机会点。</div>
+        </div>
+        <div class="ip-offer">
+          <div class="ip-offer-title">全息 · 硬件落地服务</div>
+          <div class="ip-offer-sub">请直接与我联系</div>
+          <div class="ip-offer-desc">全息舱、互动装置、硬件集成等线下落地方案，按需定制。</div>
+        </div>
+      </div>
+      <div class="ip-contact">
+        <span class="ip-contact-label">联系方式</span>
+        <a class="ip-contact-item" href="tel:18721638048">微信 / 手机 同号 18721638048</a>
+        <a class="ip-contact-item" href="mailto:abinwang1@gmail.com">EMAIL · abinwang1@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <footer><div>王盛业 / ABiNGO<br>缤谷王 · 滨谷王</div><div>IP CREATION / BRAND × IP / HOLOGRAM / GAME / ANIMATION / MUSIC</div><div>周易玄学已上线 · ichingwang.com</div></footer>
   <a class="home-btn" href="#top">↑ 回到首页</a>
 </section>
 
@@ -1335,6 +1425,7 @@ function tjNextTrack(){tjLoadTrack(tjTrackIndex+1,true);}
 function tjPrevTrack(){tjLoadTrack(tjTrackIndex-1,true);}
 let tjSlideTimer=null;
 let tjVideoEndedCleanup=null;
+let tjAutoAdvance=false;
 
 function tjFormat(sec){
   if(!Number.isFinite(sec))sec=0;
@@ -1351,7 +1442,7 @@ function tjPauseInlineVideos(except=null){
 }
 function tjScheduleCurrent(){
   tjClearSchedule();
-  if(!tjSlides.length || tjAudio.paused || tjAudio.ended)return;
+  if(!tjSlides.length || !tjAutoAdvance)return;
   const slide=tjSlides[tjIndex];
   const v=slide.querySelector('.tj-inline-video');
   if(v){
@@ -1362,17 +1453,21 @@ function tjScheduleCurrent(){
     const advance=()=>{
       if(tjIndex!==tjSlides.indexOf(slide))return;
       tjVideoEndedCleanup=null;
-      if(!tjAudio.paused && !tjAudio.ended)tjSetSlide(tjIndex+1,true);
+      if(tjAutoAdvance)tjSetSlide(tjIndex+1,true);
     };
     v.addEventListener('ended',advance,{once:true});
     tjVideoEndedCleanup=()=>v.removeEventListener('ended',advance);
     const playVideo=()=>{const p=v.play();if(p&&typeof p.catch==='function')p.catch(()=>{});};
     if(v.readyState>=2)playVideo();
     else v.addEventListener('canplay',playVideo,{once:true});
+    // 视频播放兜底：最长 9 秒后自动前进，避免卡住
+    tjSlideTimer=setTimeout(()=>{
+      if(tjAutoAdvance){try{v.pause();}catch(e){}tjSetSlide(tjIndex+1,true);}
+    },9000);
   }else{
     tjPauseInlineVideos();
     tjSlideTimer=setTimeout(()=>{
-      if(!tjAudio.paused && !tjAudio.ended)tjSetSlide(tjIndex+1,true);
+      if(tjAutoAdvance)tjSetSlide(tjIndex+1,true);
     },TJ_IMAGE_SECONDS*1000);
   }
 }
@@ -1384,11 +1479,23 @@ function tjSetSlide(idx,schedule=false){
   tjPauseInlineVideos();
   tjCaption.textContent=tjSlides[tjIndex].dataset.caption || '';
   tjCount.textContent=String(tjIndex+1).padStart(2,'0')+' / '+String(tjSlides.length).padStart(2,'0');
-  if(schedule && !tjAudio.paused && !tjAudio.ended)tjScheduleCurrent();
+  if(schedule && tjAutoAdvance)tjScheduleCurrent();
 }
 tjSetSlide(0,false);
 tjLoadTrack(0,false);
 tjAudio.volume=parseFloat(tjVolume.value);
+
+// TJ 图片 slideshow：进入视口即自动轮播，与音乐播放解耦（音乐仍可独立播放）
+const tjSectionEl=document.getElementById('tj');
+if(tjSectionEl){
+  const tjIO=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){ if(!tjAutoAdvance){tjAutoAdvance=true;tjScheduleCurrent();} }
+    else { tjAutoAdvance=false; tjClearSchedule(); tjPauseInlineVideos(); }
+  }),{threshold:.18});
+  tjIO.observe(tjSectionEl);
+}
+
+// 易经王产品图改为并排（3 张横排）展示，不再使用 slideshow
 
 tjPlay.addEventListener('click',async()=>{
   if(tjAudio.paused){
@@ -1398,13 +1505,10 @@ tjPlay.addEventListener('click',async()=>{
 tjAudio.addEventListener('play',()=>{
   tjPlay.textContent='PAUSE / 暂停';
   tjShow.classList.add('playing');
-  tjScheduleCurrent();
 });
 tjAudio.addEventListener('pause',()=>{
   tjPlay.textContent='PLAY / 播放';
   tjShow.classList.remove('playing');
-  tjClearSchedule();
-  tjPauseInlineVideos();
 });
 tjAudio.addEventListener('ended',()=>{
   tjClearSchedule();tjPauseInlineVideos();tjNextTrack();
