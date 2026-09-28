@@ -49,9 +49,6 @@ a{color:inherit;text-decoration:none} img,video{display:block;max-width:100%}
 /* v27 — homepage right-side artwork: use the supplied image as the complete visual. */
 .hero-art::before,.hero-art::after{content:none!important;display:none!important}
 .hero-art-image{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;object-position:left center;background:#000;z-index:1;user-select:none;-webkit-user-drag:none}
-.hero-qr{position:absolute;right:4vw;bottom:8vh;z-index:5;width:min(160px,13vw);text-align:center;pointer-events:none}
-.hero-qr img{width:100%;height:auto;border-radius:12px;background:#fff;padding:6px;box-shadow:0 14px 44px rgba(0,0,0,.45);pointer-events:auto}
-.hero-qr span{display:block;margin-top:8px;font-size:10px;letter-spacing:.08em;color:#999}
 .hero-orbit{position:absolute;border:1px solid rgba(255,255,255,.15);border-radius:50%;left:50%;top:48%;transform:translate(-50%,-50%)}
 .orbit-a{width:min(34vw,590px);aspect-ratio:1}.orbit-b{width:min(25vw,430px);aspect-ratio:1;border-color:rgba(57,232,255,.22);transform:translate(-50%,-50%) rotate(23deg)}.orbit-c{width:min(16vw,275px);aspect-ratio:1;border-color:rgba(124,255,66,.28);box-shadow:0 0 80px rgba(124,255,66,.04) inset}
 .hero-crosshair{position:absolute;left:50%;top:48%;width:min(39vw,680px);height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);transform:translate(-50%,-50%)}.hero-crosshair::after{content:"";position:absolute;left:50%;top:-34vh;width:1px;height:68vh;background:linear-gradient(transparent,rgba(255,255,255,.2),transparent)}
@@ -236,7 +233,7 @@ a{color:inherit;text-decoration:none} img,video{display:block;max-width:100%}
 
 /* NEXT + CONTACT */
 .next{min-height:72svh;padding:10vh 7vw;border-top:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}.next h2{margin:0;font-size:clamp(58px,10vw,170px);line-height:.82;letter-spacing:-.07em}.next p{max-width:760px;color:#898989;font-size:18px;line-height:1.6}.nextcard{margin-top:36px;max-width:780px;min-height:260px;border:1px solid var(--line);border-radius:26px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,#0b0b0b,#050505)}.nextcard b{font-size:clamp(36px,5vw,78px);line-height:.9}.nextcard span{font-size:10px;letter-spacing:.18em;color:#666}
-.contact{min-height:100svh;padding:12vh 6vw;display:flex;flex-direction:column;justify-content:space-between;border-top:1px solid var(--line);background:radial-gradient(circle at 80% 30%,rgba(124,255,66,.08),transparent 24%),#030303}.mega{font-size:clamp(70px,13vw,210px);line-height:.8;letter-spacing:-.075em;font-weight:950}.mega span{color:var(--acid)}.contact footer{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;color:#777;font-size:11px;line-height:1.7}
+.contact{min-height:100svh;padding:12vh 6vw;display:flex;flex-direction:column;justify-content:space-between;align-items:center;border-top:1px solid var(--line);background:radial-gradient(circle at 80% 30%,rgba(124,255,66,.08),transparent 24%),#030303;text-align:center}.contact .reveal{width:100%;display:flex;flex-direction:column;align-items:center}.contact .kicker{text-align:center}.mega{font-size:clamp(70px,13vw,210px);line-height:.8;letter-spacing:-.075em;font-weight:950;text-align:center}.mega span{color:var(--acid)}.contact footer{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;color:#777;font-size:11px;line-height:1.7}
 .home-btn{display:inline-flex;align-items:center;gap:10px;align-self:center;margin-top:42px;padding:15px 30px;border:1px solid rgba(124,255,66,.34);border-radius:99px;background:rgba(124,255,66,.08);color:#d8ffca;font-size:13px;font-weight:700;letter-spacing:.10em;text-decoration:none;cursor:pointer;transition:.2s}.home-btn:hover{background:rgba(124,255,66,.16);border-color:rgba(124,255,66,.6);color:#fff;transform:translateY(-2px)}
 
 /* ===== 易经王 LIVE CASE — same chapter layout as other pages ===== */
@@ -262,10 +259,10 @@ a{color:inherit;text-decoration:none} img,video{display:block;max-width:100%}
 .iching-case .gallery .card img{display:block;width:auto;height:100%;object-fit:contain;object-position:center;background:#0b0614}
 
 /* ===== CONTACT: IP pitch ===== */
-.ip-pitch{margin-top:40px;max-width:1080px}
-.ip-pitch-head{font-size:clamp(24px,3.2vw,50px);line-height:1.05;letter-spacing:-.03em;font-weight:850;margin-bottom:28px;color:#f4ffe9}
-.ip-pitch-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
-.ip-offer{border:1px solid rgba(124,255,66,.22);border-radius:18px;padding:22px 24px;background:rgba(124,255,66,.05)}
+.ip-pitch{margin:40px auto 0;max-width:1080px;text-align:center}
+.ip-pitch-head{font-size:clamp(24px,3.2vw,50px);line-height:1.05;letter-spacing:-.03em;font-weight:850;margin-bottom:28px;color:#f4ffe9;text-align:center}
+.ip-pitch-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-bottom:28px}
+.ip-offer{flex:1 1 360px;max-width:480px;border:1px solid rgba(124,255,66,.22);border-radius:18px;padding:22px 24px;background:rgba(124,255,66,.05);text-align:center}
 .ip-offer-title{font-size:18px;font-weight:800;color:#d8ffca;margin-bottom:5px}
 .ip-offer-sub{font-size:14px;color:var(--acid);font-weight:700;letter-spacing:.03em;margin-bottom:9px}
 .ip-offer-desc{font-size:13px;line-height:1.7;color:#9ea99a}
@@ -351,7 +348,7 @@ body.video-open{overflow:hidden}
 .qr-modal{position:fixed;inset:0;z-index:350;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.88);backdrop-filter:blur(12px);padding:22px}.qr-modal.open{display:flex}.qr-box{max-width:min(420px,86vw);text-align:center;background:#111;border:1px solid rgba(255,255,255,.12);border-radius:26px;padding:34px 32px 28px;box-shadow:0 34px 100px rgba(0,0,0,.55)}.qr-box img{width:100%;max-width:280px;height:auto;border-radius:16px;background:#fff;padding:8px;display:block;margin:0 auto}.qr-title{font-size:22px;font-weight:700;letter-spacing:.06em;margin:22px 0 8px;color:#fff}.qr-tip{font-size:15px;line-height:1.55;color:#ddd;margin-bottom:10px}.qr-note{font-size:12px;color:#777}.qr-close{position:fixed;right:22px;top:20px;z-index:9999;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.28);background:rgba(18,18,18,.72);color:#fff;display:grid;place-items:center;cursor:pointer;font-size:22px;line-height:1;backdrop-filter:blur(10px)}.qr-close:hover{background:rgba(255,255,255,.14)}
 
 @media(max-width:1050px){
-  .yearrail,.links{display:none}.topnav{height:60px;padding:0 20px}.hero{display:block;padding-top:60px;min-height:100svh}.hero-grid{inset:60px 0 0 0}.hero-copy{min-height:60svh;padding:96px 22px 56px}.hero-number{top:30px;left:22px}.hero h1{font-size:22vw}.hero-name{font-size:8vw}.hero-art{height:42svh;min-height:330px;border-left:0;border-top:1px solid var(--line)}.hero-art::before{width:76vw}.hero-qr{right:18px;bottom:18px;width:min(120px,30vw)}.hero-qr span{font-size:9px;color:#bbb}.orbit-a{width:72vw}.orbit-b{width:54vw}.orbit-c{width:34vw}.hero-monogram{font-size:32vw}.hero-signal{right:18px;top:28px}.hero-year{right:20px;bottom:42px;font-size:9vw}.hero-index-a{left:7%;top:18%}.hero-index-b{left:9%;bottom:18%}.hero-index-c{right:18%;top:24%}.hero-index-d{right:12%;bottom:27%}.hero-marquee{height:30px}
+  .yearrail,.links{display:none}.topnav{height:60px;padding:0 20px}.hero{display:block;padding-top:60px;min-height:100svh}.hero-grid{inset:60px 0 0 0}.hero-copy{min-height:60svh;padding:96px 22px 56px}.hero-number{top:30px;left:22px}.hero h1{font-size:22vw}.hero-name{font-size:8vw}.hero-art{height:42svh;min-height:330px;border-left:0;border-top:1px solid var(--line)}.hero-art::before{width:76vw}.orbit-a{width:72vw}.orbit-b{width:54vw}.orbit-c{width:34vw}.hero-monogram{font-size:32vw}.hero-signal{right:18px;top:28px}.hero-year{right:20px;bottom:42px;font-size:9vw}.hero-index-a{left:7%;top:18%}.hero-index-b{left:9%;bottom:18%}.hero-index-c{right:18%;top:24%}.hero-index-d{right:12%;bottom:27%}.hero-marquee{height:30px}
   .story{grid-template-columns:1fr;padding:76px 22px 52px}.chapter{display:block;min-height:auto}.copy{position:relative;top:auto;height:auto;min-height:48svh;padding:76px 22px 28px;justify-content:center}.media{min-height:auto}.gallery{padding:2vh 22px 44px;gap:14px;min-height:0}.card,.card.small{flex-basis:82vw;height:var(--gallery-h-mobile);min-height:350px;border-radius:21px}.gallery>article.auto-media-card{--gallery-media-h:var(--gallery-h-mobile);min-height:350px!important;border-radius:21px}.archive-work .card,.archive-work .card.portrait-card,.naruto-work .card.device,.sandbox-work .card.portrait-card{flex-basis:82vw}.collabs{display:block;padding:76px 22px 52px}.collab-board{grid-template-columns:1fr;margin-top:42px}.collab-item{min-height:82px}.collab-type{display:none}
   .axi-onepage,.gm-takeover,.gm-game-intro{display:block;padding:84px 22px 48px;min-height:auto}.axi-head{display:block}.axi-copy h2,.gm-copy h2,.gm-game-copy h2{font-size:20vw}.axi-cover{width:82vw;aspect-ratio:941/1672;margin:28px auto 0;transform:none;max-height:96svh}.gm-cover,.gm-game-cover{width:82vw;height:56svh;margin:28px auto 0;transform:none}.axi-gallery-wrap{margin-top:24px;padding-top:20px}
   .axi-phone{flex-basis:76vw;height:var(--gallery-h-mobile);min-height:350px;border-radius:32px}.axi-poster{flex-basis:78vw;height:var(--gallery-h-mobile);min-height:350px}
@@ -367,7 +364,7 @@ body.video-open{overflow:hidden}
   .iching-fact{padding:15px 17px}
   .iching-fact span{font-size:14px;line-height:1.45}
   .iching-case .desc{margin-bottom:26px;line-height:1.9}
-  .ip-pitch-grid{grid-template-columns:1fr}
+  .ip-pitch-grid{justify-content:center}
   .ip-contact{gap:12px 16px}
   .ip-contact-item{font-size:13px;padding:9px 16px}
 }
@@ -424,11 +421,7 @@ body.video-open{overflow:hidden}
   </div>
   <div class="hero-art reveal">
     <img class="hero-art-image" src="MEDIA/HERO/ABINGO-THINK.png" alt="ABiNGO character universe artwork" draggable="false">
-    <div class="hero-qr" aria-label="超级舌阿蜥小程序二维码">
-      <img src="MEDIA/P07/mini-program-qr.jpg" alt="超级舌阿蜥小程序二维码">
-      <span>超级舌阿蜥 · 扫码体验</span>
     </div>
-  </div>
   <div class="hero-marquee" aria-hidden="true"><div>ABiNGO · ORIGINAL IP · BRAND × IP · HOLOGRAM · INTERACTIVE · GAME · MUSIC · ABiNGO · ORIGINAL IP · BRAND × IP · HOLOGRAM · INTERACTIVE · GAME · MUSIC ·</div></div>
 </section>
 
