@@ -445,6 +445,60 @@ window.PAGE_MEDIA_MANIFEST = {
       "className": "axi-phone"
     },
     {
+      "name": "superaxi_onsite_1475.jpg",
+      "src": "MEDIA/P07/superaxi_onsite_1475.jpg",
+      "type": "image",
+      "title": "现场",
+      "subtitle": "ON-SITE",
+      "caption": "现场安装 / 阿蜥亮相",
+      "className": "axi-phone"
+    },
+    {
+      "name": "superaxi_onsite_1461.jpg",
+      "src": "MEDIA/P07/superaxi_onsite_1461.jpg",
+      "type": "image",
+      "title": "现场",
+      "subtitle": "ON-SITE",
+      "caption": "现场安装实录",
+      "className": "axi-poster"
+    },
+    {
+      "name": "superaxi_onsite_1462.jpg",
+      "src": "MEDIA/P07/superaxi_onsite_1462.jpg",
+      "type": "image",
+      "title": "现场",
+      "subtitle": "ON-SITE",
+      "caption": "现场安装实录",
+      "className": "axi-poster"
+    },
+    {
+      "name": "superaxi_onsite_1480.jpg",
+      "src": "MEDIA/P07/superaxi_onsite_1480.jpg",
+      "type": "image",
+      "title": "现场",
+      "subtitle": "ON-SITE",
+      "caption": "现场安装实录",
+      "className": "axi-poster"
+    },
+    {
+      "name": "superaxi_onsite_1466.jpg",
+      "src": "MEDIA/P07/superaxi_onsite_1466.jpg",
+      "type": "image",
+      "title": "现场",
+      "subtitle": "ON-SITE",
+      "caption": "现场安装实录",
+      "className": "axi-poster"
+    },
+    {
+      "name": "superaxi_onsite_1473.jpg",
+      "src": "MEDIA/P07/superaxi_onsite_1473.jpg",
+      "type": "image",
+      "title": "现场",
+      "subtitle": "ON-SITE",
+      "caption": "现场安装实录",
+      "className": "axi-poster"
+    },
+    {
       "name": "superaxi_portal_transition.mp4",
       "src": "MEDIA/P07/superaxi_portal_transition.mp4",
       "type": "video",
