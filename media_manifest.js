@@ -439,72 +439,72 @@ window.PAGE_MEDIA_MANIFEST = {
       "name": "superaxi_game_start.jpg",
       "src": "MEDIA/P07/superaxi_game_start.jpg",
       "type": "image",
-      "title": "首页",
+      "title": "首頁",
       "subtitle": "GAME START",
-      "caption": "超级舌阿蜥 / 首页",
+      "caption": "超級舌阿蜥 / 首頁",
       "className": "axi-phone"
     },
     {
       "name": "superaxi_onsite_1475.jpg",
       "src": "MEDIA/P07/superaxi_onsite_1475.jpg",
       "type": "image",
-      "title": "现场",
+      "title": "現場",
       "subtitle": "ON-SITE",
-      "caption": "现场安装 / 阿蜥亮相",
+      "caption": "現場安裝 / 阿蜥亮相",
       "className": "axi-phone"
     },
     {
       "name": "superaxi_onsite_1461.jpg",
       "src": "MEDIA/P07/superaxi_onsite_1461.jpg",
       "type": "image",
-      "title": "现场",
+      "title": "現場",
       "subtitle": "ON-SITE",
-      "caption": "现场安装实录",
+      "caption": "現場安裝實錄",
       "className": "axi-poster"
     },
     {
       "name": "superaxi_onsite_1462.jpg",
       "src": "MEDIA/P07/superaxi_onsite_1462.jpg",
       "type": "image",
-      "title": "现场",
+      "title": "現場",
       "subtitle": "ON-SITE",
-      "caption": "现场安装实录",
+      "caption": "現場安裝實錄",
       "className": "axi-poster"
     },
     {
       "name": "superaxi_onsite_1480.jpg",
       "src": "MEDIA/P07/superaxi_onsite_1480.jpg",
       "type": "image",
-      "title": "现场",
+      "title": "現場",
       "subtitle": "ON-SITE",
-      "caption": "现场安装实录",
+      "caption": "現場安裝實錄",
       "className": "axi-poster"
     },
     {
       "name": "superaxi_onsite_1466.jpg",
       "src": "MEDIA/P07/superaxi_onsite_1466.jpg",
       "type": "image",
-      "title": "现场",
+      "title": "現場",
       "subtitle": "ON-SITE",
-      "caption": "现场安装实录",
+      "caption": "現場安裝實錄",
       "className": "axi-poster"
     },
     {
       "name": "superaxi_onsite_1473.jpg",
       "src": "MEDIA/P07/superaxi_onsite_1473.jpg",
       "type": "image",
-      "title": "现场",
+      "title": "現場",
       "subtitle": "ON-SITE",
-      "caption": "现场安装实录",
+      "caption": "現場安裝實錄",
       "className": "axi-poster"
     },
     {
       "name": "superaxi_portal_transition.mp4",
       "src": "MEDIA/P07/superaxi_portal_transition.mp4",
       "type": "video",
-      "title": "穿越门",
+      "title": "穿越門",
       "subtitle": "TRANSITION FILM",
-      "caption": "穿越门 / 过场动画",
+      "caption": "穿越門 / 過場動畫",
       "className": "axi-phone video-card"
     },
     {
@@ -547,9 +547,9 @@ window.PAGE_MEDIA_MANIFEST = {
       "name": "superaxi_character_sheet.png",
       "src": "MEDIA/P07/superaxi_character_sheet.png",
       "type": "image",
-      "title": "角色设定",
+      "title": "角色設定",
       "subtitle": "CHARACTER SHEET",
-      "caption": "阿蜥 / 角色设定图",
+      "caption": "阿蜥 / 角色設定圖",
       "className": "axi-poster"
     }
   ],
@@ -558,9 +558,9 @@ window.PAGE_MEDIA_MANIFEST = {
       "name": "garage_op.mp4",
       "src": "MEDIA/P08/garage_op.mp4",
       "type": "video",
-      "title": "OP / 动画片段",
+      "title": "OP / 動畫片段",
       "subtitle": "01 · VIDEO",
-      "caption": "OP / 动画片段",
+      "caption": "OP / 動畫片段",
       "className": "gm-card op-card video-card"
     },
     {
@@ -603,9 +603,9 @@ window.PAGE_MEDIA_MANIFEST = {
       "name": "garage_churchill.jpeg",
       "src": "MEDIA/P08/garage_churchill.jpeg",
       "type": "image",
-      "title": "丘吉尔 Mk.VII",
+      "title": "丘吉爾 Mk.VII",
       "subtitle": "06 · POSTER",
-      "caption": "丘吉尔 Mk.VII",
+      "caption": "丘吉爾 Mk.VII",
       "className": "gm-card poster-card"
     },
     {
@@ -650,9 +650,9 @@ window.PAGE_MEDIA_MANIFEST = {
       "name": "gm_ultimate_steelwave.mp4",
       "src": "MEDIA/P09/gm_ultimate_steelwave.mp4",
       "type": "video",
-      "title": "钢派波",
+      "title": "鋼派波",
       "subtitle": "ULTIMATE 03",
-      "caption": "钢派波",
+      "caption": "鋼派波",
       "className": "gm-skill-card video-card"
     }
   ],
@@ -744,7 +744,7 @@ window.PAGE_MEDIA_MANIFEST = {
       "type": "image",
       "title": "tj neon detective",
       "subtitle": "IMAGE",
-      "caption": "霓虹侦探 · NEON DETECTIVE",
+      "caption": "霓虹偵探 · NEON DETECTIVE",
       "className": ""
     },
     {
