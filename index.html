@@ -749,12 +749,12 @@ body.video-open{overflow:hidden}
   <div class="tj-album reveal">
     <div class="tj-album-head"><small>DEBUT ALBUM / TENTATIVE TRACKLIST</small><h3>首張專輯<br>歌單</h3><p>11 TRACKS · 暫定</p></div>
     <div class="tj-tracklist">
-      <div class="tj-track">萊特</div><div class="tj-track">Friends (I'll be here!!)</div>
-      <div class="tj-track">我還在路上</div><div class="tj-track">別怕慢慢走</div>
-      <div class="tj-track">霓虹偵探</div><div class="tj-track">鬆開手</div>
-      <div class="tj-track">Life goes on</div><div class="tj-track">跟我跟我走</div>
-      <div class="tj-track">MONSTER</div><div class="tj-track">WANNA LOVE 我想去愛</div>
-      <div class="tj-track">午夜的沙灘</div>
+      <div class="tj-track">萊特來了</div><div class="tj-track">Friends (I'll be here!)</div>
+      <div class="tj-track">我們愛這個錯(MONSTER)</div><div class="tj-track">Life goes on</div>
+      <div class="tj-track">別怕慢慢走</div><div class="tj-track">鬆開手</div>
+      <div class="tj-track">霓虹偵探</div><div class="tj-track">跟我跟我走</div>
+      <div class="tj-track">喜歡就不必藏起</div><div class="tj-track">WANNA LOVE 我想去愛</div>
+      <div class="tj-track">月光留在沙灘上</div>
     </div>
     <div class="tj-album-foot"><b>ARTIST DIRECTION</b><br>Rock / Vocal / Emotional Range / Stage Presence</div>
   </div>
@@ -783,7 +783,7 @@ body.video-open{overflow:hidden}
         <input class="tj-volume" id="tjVolume" type="range" min="0" max="1" step="0.01" value="0.85" aria-label="音量">
         <span class="tj-time" id="tjTime">00:00 / 02:00</span>
       </div>
-      <div class="tj-progress" id="tjProgress"><span id="tjProgressBar"></span></div>
+      <div class="tj-progress" id="tjProgress" title="開啟 Spotify · 林彤婕"><span id="tjProgressBar"></span></div>
       <audio id="tjAudio" preload="metadata"></audio>
     </div>
   </div>
@@ -1569,10 +1569,8 @@ tjVolume.addEventListener('input',()=>{
   if(tjAudio.volume>0)tjAudio.muted=false;
   tjMute.textContent=tjAudio.muted?'×':'♪';
 });
-tjProgress.addEventListener('click',e=>{
-  const r=tjProgress.getBoundingClientRect();
-  const x=Math.max(0,Math.min(r.width,e.clientX-r.left));
-  if(Number.isFinite(tjAudio.duration))tjAudio.currentTime=(x/r.width)*tjAudio.duration;
+tjProgress.addEventListener('click',()=>{
+  window.open('https://open.spotify.com/artist/3QPEbUGgJpslTON1QAu5Ig?si=SYgGMFlJSN6OZ5I8XOzGww','_blank','noopener,noreferrer');
 });
 
 document.querySelectorAll('.tj-inline-video').forEach(v=>{
